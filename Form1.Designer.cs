@@ -34,7 +34,6 @@
             label1 = new Label();
             buttonVRAM = new Button();
             buttonGpu = new Button();
-            buttonCPU = new Button();
             labelGPU = new Label();
             labelVRAM = new Label();
             labelSSD = new Label();
@@ -45,6 +44,7 @@
             buttonHardwareScan = new Button();
             labelSystemTools = new Label();
             buttonSystemUpdate = new Button();
+            buttonCPU = new Button();
             tableLayoutPanel1 = new TableLayoutPanel();
             checkBox12 = new CheckBox();
             checkBox11 = new CheckBox();
@@ -98,7 +98,7 @@
             splitContainer.Panel2.Controls.Add(tableLayoutPanel1);
             splitContainer.Panel2.Padding = new Padding(50);
             splitContainer.Size = new Size(1876, 1139);
-            splitContainer.SplitterDistance = 1170;
+            splitContainer.SplitterDistance = 1185;
             splitContainer.SplitterWidth = 10;
             splitContainer.TabIndex = 0;
             // 
@@ -114,7 +114,6 @@
             leftTableLayout.Controls.Add(label1, 0, 5);
             leftTableLayout.Controls.Add(buttonVRAM, 2, 0);
             leftTableLayout.Controls.Add(buttonGpu, 0, 0);
-            leftTableLayout.Controls.Add(buttonCPU, 1, 0);
             leftTableLayout.Controls.Add(labelGPU, 0, 1);
             leftTableLayout.Controls.Add(labelVRAM, 2, 1);
             leftTableLayout.Controls.Add(labelSSD, 4, 1);
@@ -125,6 +124,7 @@
             leftTableLayout.Controls.Add(buttonHardwareScan, 4, 3);
             leftTableLayout.Controls.Add(labelSystemTools, 0, 2);
             leftTableLayout.Controls.Add(buttonSystemUpdate, 0, 3);
+            leftTableLayout.Controls.Add(buttonCPU, 1, 0);
             leftTableLayout.Dock = DockStyle.Fill;
             leftTableLayout.ForeColor = SystemColors.Control;
             leftTableLayout.Location = new Point(50, 50);
@@ -139,7 +139,7 @@
             leftTableLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 5.55555534F));
             leftTableLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
             leftTableLayout.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            leftTableLayout.Size = new Size(1070, 1039);
+            leftTableLayout.Size = new Size(1085, 1039);
             leftTableLayout.TabIndex = 0;
             // 
             // label1
@@ -150,7 +150,7 @@
             label1.Location = new Point(40, 837);
             label1.Margin = new Padding(0, 1, 0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(198, 38);
+            label1.Size = new Size(201, 38);
             label1.TabIndex = 13;
             label1.Text = "System Health";
             // 
@@ -159,10 +159,10 @@
             buttonVRAM.Dock = DockStyle.Fill;
             buttonVRAM.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
             buttonVRAM.ForeColor = SystemColors.ControlText;
-            buttonVRAM.Location = new Point(506, 70);
+            buttonVRAM.Location = new Point(512, 70);
             buttonVRAM.Margin = new Padding(70, 30, 70, 30);
             buttonVRAM.Name = "buttonVRAM";
-            buttonVRAM.Size = new Size(58, 312);
+            buttonVRAM.Size = new Size(61, 312);
             buttonVRAM.TabIndex = 2;
             toolTip1.SetToolTip(buttonVRAM, "VRAM usage");
             buttonVRAM.UseVisualStyleBackColor = true;
@@ -175,48 +175,34 @@
             buttonGpu.Location = new Point(110, 70);
             buttonGpu.Margin = new Padding(70, 30, 70, 30);
             buttonGpu.Name = "buttonGpu";
-            buttonGpu.Size = new Size(58, 312);
+            buttonGpu.Size = new Size(61, 312);
             buttonGpu.TabIndex = 1;
             toolTip1.SetToolTip(buttonGpu, "GPU usage");
             buttonGpu.UseVisualStyleBackColor = true;
             // 
-            // buttonCPU
-            // 
-            buttonCPU.Dock = DockStyle.Fill;
-            buttonCPU.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            buttonCPU.ForeColor = SystemColors.ControlText;
-            buttonCPU.Location = new Point(268, 70);
-            buttonCPU.Margin = new Padding(30);
-            buttonCPU.Name = "buttonCPU";
-            buttonCPU.Size = new Size(138, 312);
-            buttonCPU.TabIndex = 0;
-            buttonCPU.Text = "CPU";
-            toolTip1.SetToolTip(buttonCPU, "CPU usage");
-            buttonCPU.UseVisualStyleBackColor = true;
-            // 
             // labelGPU
             // 
+            labelGPU.Anchor = AnchorStyles.Top;
             labelGPU.AutoSize = true;
             labelGPU.BackColor = Color.Transparent;
-            labelGPU.Dock = DockStyle.Top;
             labelGPU.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelGPU.ForeColor = Color.Transparent;
-            labelGPU.Location = new Point(110, 413);
-            labelGPU.Margin = new Padding(70, 1, 60, 0);
+            labelGPU.Location = new Point(113, 413);
+            labelGPU.Margin = new Padding(70, 1, 70, 0);
             labelGPU.Name = "labelGPU";
-            labelGPU.Size = new Size(68, 30);
+            labelGPU.Size = new Size(55, 30);
             labelGPU.TabIndex = 4;
             labelGPU.Text = "GPU";
             // 
             // labelVRAM
             // 
+            labelVRAM.Anchor = AnchorStyles.Top;
             labelVRAM.AutoSize = true;
-            labelVRAM.Dock = DockStyle.Top;
             labelVRAM.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelVRAM.Location = new Point(496, 413);
+            labelVRAM.Location = new Point(510, 413);
             labelVRAM.Margin = new Padding(60, 1, 50, 0);
             labelVRAM.Name = "labelVRAM";
-            labelVRAM.Size = new Size(88, 30);
+            labelVRAM.Size = new Size(74, 30);
             labelVRAM.TabIndex = 5;
             labelVRAM.Text = "VRAM";
             // 
@@ -226,10 +212,10 @@
             labelSSD.Dock = DockStyle.Top;
             labelSSD.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelSSD.ForeColor = SystemColors.Control;
-            labelSSD.Location = new Point(902, 413);
+            labelSSD.Location = new Point(914, 413);
             labelSSD.Margin = new Padding(70, 1, 70, 0);
             labelSSD.Name = "labelSSD";
-            labelSSD.Size = new Size(58, 30);
+            labelSSD.Size = new Size(61, 30);
             labelSSD.TabIndex = 6;
             labelSSD.Text = "SSD";
             // 
@@ -238,10 +224,10 @@
             buttonStorage.Dock = DockStyle.Fill;
             buttonStorage.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
             buttonStorage.ForeColor = SystemColors.ControlText;
-            buttonStorage.Location = new Point(852, 100);
-            buttonStorage.Margin = new Padding(20, 60, 20, 30);
+            buttonStorage.Location = new Point(864, 140);
+            buttonStorage.Margin = new Padding(20, 100, 20, 100);
             buttonStorage.Name = "buttonStorage";
-            buttonStorage.Size = new Size(158, 282);
+            buttonStorage.Size = new Size(161, 172);
             buttonStorage.TabIndex = 3;
             buttonStorage.Text = "88%";
             toolTip1.SetToolTip(buttonStorage, "Available space");
@@ -251,10 +237,10 @@
             // 
             buttonMacroKey.Dock = DockStyle.Fill;
             buttonMacroKey.ForeColor = SystemColors.ControlText;
-            buttonMacroKey.Location = new Point(258, 644);
+            buttonMacroKey.Location = new Point(261, 644);
             buttonMacroKey.Margin = new Padding(20);
             buttonMacroKey.Name = "buttonMacroKey";
-            buttonMacroKey.Size = new Size(158, 119);
+            buttonMacroKey.Size = new Size(161, 119);
             buttonMacroKey.TabIndex = 9;
             buttonMacroKey.Text = "Macro Key";
             buttonMacroKey.UseVisualStyleBackColor = true;
@@ -263,10 +249,10 @@
             // 
             buttonPower.Dock = DockStyle.Fill;
             buttonPower.ForeColor = SystemColors.ControlText;
-            buttonPower.Location = new Point(456, 644);
+            buttonPower.Location = new Point(462, 644);
             buttonPower.Margin = new Padding(20);
             buttonPower.Name = "buttonPower";
-            buttonPower.Size = new Size(158, 119);
+            buttonPower.Size = new Size(161, 119);
             buttonPower.TabIndex = 10;
             buttonPower.Text = "Power";
             buttonPower.UseVisualStyleBackColor = true;
@@ -275,10 +261,10 @@
             // 
             buttonMedia.Dock = DockStyle.Fill;
             buttonMedia.ForeColor = SystemColors.ControlText;
-            buttonMedia.Location = new Point(654, 644);
+            buttonMedia.Location = new Point(663, 644);
             buttonMedia.Margin = new Padding(20);
             buttonMedia.Name = "buttonMedia";
-            buttonMedia.Size = new Size(158, 119);
+            buttonMedia.Size = new Size(161, 119);
             buttonMedia.TabIndex = 12;
             buttonMedia.Text = "Media";
             buttonMedia.UseVisualStyleBackColor = true;
@@ -287,10 +273,10 @@
             // 
             buttonHardwareScan.Dock = DockStyle.Fill;
             buttonHardwareScan.ForeColor = SystemColors.ControlText;
-            buttonHardwareScan.Location = new Point(852, 644);
+            buttonHardwareScan.Location = new Point(864, 644);
             buttonHardwareScan.Margin = new Padding(20);
             buttonHardwareScan.Name = "buttonHardwareScan";
-            buttonHardwareScan.Size = new Size(158, 119);
+            buttonHardwareScan.Size = new Size(161, 119);
             buttonHardwareScan.TabIndex = 11;
             buttonHardwareScan.Text = "Hardware Scan";
             buttonHardwareScan.UseVisualStyleBackColor = true;
@@ -303,7 +289,7 @@
             labelSystemTools.Location = new Point(40, 586);
             labelSystemTools.Margin = new Padding(0);
             labelSystemTools.Name = "labelSystemTools";
-            labelSystemTools.Size = new Size(198, 38);
+            labelSystemTools.Size = new Size(201, 38);
             labelSystemTools.TabIndex = 7;
             labelSystemTools.Text = "System Tools";
             // 
@@ -314,10 +300,24 @@
             buttonSystemUpdate.Location = new Point(60, 644);
             buttonSystemUpdate.Margin = new Padding(20);
             buttonSystemUpdate.Name = "buttonSystemUpdate";
-            buttonSystemUpdate.Size = new Size(158, 119);
+            buttonSystemUpdate.Size = new Size(161, 119);
             buttonSystemUpdate.TabIndex = 8;
             buttonSystemUpdate.Text = "System Update";
             buttonSystemUpdate.UseVisualStyleBackColor = true;
+            // 
+            // buttonCPU
+            // 
+            buttonCPU.Dock = DockStyle.Fill;
+            buttonCPU.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            buttonCPU.ForeColor = SystemColors.ControlText;
+            buttonCPU.Location = new Point(261, 100);
+            buttonCPU.Margin = new Padding(20, 60, 20, 60);
+            buttonCPU.Name = "buttonCPU";
+            buttonCPU.Size = new Size(161, 252);
+            buttonCPU.TabIndex = 0;
+            buttonCPU.Text = "CPU";
+            toolTip1.SetToolTip(buttonCPU, "CPU usage");
+            buttonCPU.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel1
             // 
@@ -366,17 +366,17 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 7.958257F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 7.958257F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 7.958257F));
-            tableLayoutPanel1.Size = new Size(596, 1039);
+            tableLayoutPanel1.Size = new Size(581, 1039);
             tableLayoutPanel1.TabIndex = 0;
             // 
             // checkBox12
             // 
             checkBox12.AutoSize = true;
             checkBox12.Dock = DockStyle.Bottom;
-            checkBox12.Location = new Point(435, 970);
+            checkBox12.Location = new Point(427, 970);
             checkBox12.Margin = new Padding(137, 0, 0, 0);
             checkBox12.Name = "checkBox12";
-            checkBox12.Size = new Size(121, 29);
+            checkBox12.Size = new Size(114, 29);
             checkBox12.TabIndex = 24;
             checkBox12.Text = "checkBox12";
             checkBox12.UseVisualStyleBackColor = true;
@@ -385,10 +385,10 @@
             // 
             checkBox11.AutoSize = true;
             checkBox11.Dock = DockStyle.Bottom;
-            checkBox11.Location = new Point(435, 890);
+            checkBox11.Location = new Point(427, 890);
             checkBox11.Margin = new Padding(137, 0, 0, 0);
             checkBox11.Name = "checkBox11";
-            checkBox11.Size = new Size(121, 29);
+            checkBox11.Size = new Size(114, 29);
             checkBox11.TabIndex = 23;
             checkBox11.Text = "checkBox11";
             checkBox11.UseVisualStyleBackColor = true;
@@ -397,10 +397,10 @@
             // 
             checkBox10.AutoSize = true;
             checkBox10.Dock = DockStyle.Bottom;
-            checkBox10.Location = new Point(435, 814);
+            checkBox10.Location = new Point(427, 814);
             checkBox10.Margin = new Padding(137, 0, 0, 0);
             checkBox10.Name = "checkBox10";
-            checkBox10.Size = new Size(121, 29);
+            checkBox10.Size = new Size(114, 29);
             checkBox10.TabIndex = 22;
             checkBox10.Text = "checkBox10";
             checkBox10.UseVisualStyleBackColor = true;
@@ -409,10 +409,10 @@
             // 
             checkBox8.AutoSize = true;
             checkBox8.Dock = DockStyle.Bottom;
-            checkBox8.Location = new Point(435, 619);
+            checkBox8.Location = new Point(427, 619);
             checkBox8.Margin = new Padding(137, 0, 0, 0);
             checkBox8.Name = "checkBox8";
-            checkBox8.Size = new Size(121, 29);
+            checkBox8.Size = new Size(114, 29);
             checkBox8.TabIndex = 20;
             checkBox8.Text = "checkBox8";
             checkBox8.UseVisualStyleBackColor = true;
@@ -421,10 +421,10 @@
             // 
             checkBox7.AutoSize = true;
             checkBox7.Dock = DockStyle.Bottom;
-            checkBox7.Location = new Point(435, 543);
+            checkBox7.Location = new Point(427, 543);
             checkBox7.Margin = new Padding(137, 0, 0, 0);
             checkBox7.Name = "checkBox7";
-            checkBox7.Size = new Size(121, 29);
+            checkBox7.Size = new Size(114, 29);
             checkBox7.TabIndex = 19;
             checkBox7.Text = "checkBox7";
             checkBox7.UseVisualStyleBackColor = true;
@@ -433,10 +433,10 @@
             // 
             checkBox6.AutoSize = true;
             checkBox6.Dock = DockStyle.Bottom;
-            checkBox6.Location = new Point(435, 467);
+            checkBox6.Location = new Point(427, 467);
             checkBox6.Margin = new Padding(137, 0, 0, 0);
             checkBox6.Name = "checkBox6";
-            checkBox6.Size = new Size(121, 29);
+            checkBox6.Size = new Size(114, 29);
             checkBox6.TabIndex = 18;
             checkBox6.Text = "checkBox6";
             checkBox6.UseVisualStyleBackColor = true;
@@ -445,10 +445,10 @@
             // 
             checkBox5.AutoSize = true;
             checkBox5.Dock = DockStyle.Bottom;
-            checkBox5.Location = new Point(435, 391);
+            checkBox5.Location = new Point(427, 391);
             checkBox5.Margin = new Padding(137, 0, 0, 0);
             checkBox5.Name = "checkBox5";
-            checkBox5.Size = new Size(121, 29);
+            checkBox5.Size = new Size(114, 29);
             checkBox5.TabIndex = 17;
             checkBox5.Text = "checkBox5";
             checkBox5.UseVisualStyleBackColor = true;
@@ -457,10 +457,10 @@
             // 
             checkBox4.AutoSize = true;
             checkBox4.Dock = DockStyle.Bottom;
-            checkBox4.Location = new Point(435, 315);
+            checkBox4.Location = new Point(427, 315);
             checkBox4.Margin = new Padding(137, 0, 0, 0);
             checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(121, 29);
+            checkBox4.Size = new Size(114, 29);
             checkBox4.TabIndex = 16;
             checkBox4.Text = "checkBox4";
             checkBox4.UseVisualStyleBackColor = true;
@@ -469,10 +469,10 @@
             // 
             checkBox3.AutoSize = true;
             checkBox3.Dock = DockStyle.Bottom;
-            checkBox3.Location = new Point(435, 239);
+            checkBox3.Location = new Point(427, 239);
             checkBox3.Margin = new Padding(137, 0, 0, 0);
             checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(121, 29);
+            checkBox3.Size = new Size(114, 29);
             checkBox3.TabIndex = 15;
             checkBox3.Text = "checkBox3";
             checkBox3.UseVisualStyleBackColor = true;
@@ -481,10 +481,10 @@
             // 
             checkBox2.AutoSize = true;
             checkBox2.Dock = DockStyle.Bottom;
-            checkBox2.Location = new Point(435, 163);
+            checkBox2.Location = new Point(427, 163);
             checkBox2.Margin = new Padding(137, 0, 0, 0);
             checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(121, 29);
+            checkBox2.Size = new Size(114, 29);
             checkBox2.TabIndex = 14;
             checkBox2.Text = "checkBox2";
             checkBox2.UseVisualStyleBackColor = true;
@@ -498,7 +498,7 @@
             label13.Location = new Point(40, 967);
             label13.Margin = new Padding(0);
             label13.Name = "label13";
-            label13.Size = new Size(258, 32);
+            label13.Size = new Size(250, 32);
             label13.TabIndex = 12;
             label13.Text = "Legion Edge";
             // 
@@ -511,7 +511,7 @@
             labelLegionEdge.Location = new Point(40, 84);
             labelLegionEdge.Margin = new Padding(0);
             labelLegionEdge.Name = "labelLegionEdge";
-            labelLegionEdge.Size = new Size(258, 32);
+            labelLegionEdge.Size = new Size(250, 32);
             labelLegionEdge.TabIndex = 1;
             labelLegionEdge.Text = "Legion Edge";
             // 
@@ -524,7 +524,7 @@
             labelThermalMode.Location = new Point(40, 160);
             labelThermalMode.Margin = new Padding(0);
             labelThermalMode.Name = "labelThermalMode";
-            labelThermalMode.Size = new Size(258, 32);
+            labelThermalMode.Size = new Size(250, 32);
             labelThermalMode.TabIndex = 2;
             labelThermalMode.Text = "Thermal Mode";
             // 
@@ -537,7 +537,7 @@
             labelGPUOverlock.Location = new Point(40, 236);
             labelGPUOverlock.Margin = new Padding(0);
             labelGPUOverlock.Name = "labelGPUOverlock";
-            labelGPUOverlock.Size = new Size(258, 32);
+            labelGPUOverlock.Size = new Size(250, 32);
             labelGPUOverlock.TabIndex = 3;
             labelGPUOverlock.Text = "GPU Overclock";
             // 
@@ -550,7 +550,7 @@
             labelNetworkBoost.Location = new Point(40, 312);
             labelNetworkBoost.Margin = new Padding(0);
             labelNetworkBoost.Name = "labelNetworkBoost";
-            labelNetworkBoost.Size = new Size(258, 32);
+            labelNetworkBoost.Size = new Size(250, 32);
             labelNetworkBoost.TabIndex = 4;
             labelNetworkBoost.Text = "Network Boost";
             // 
@@ -563,7 +563,7 @@
             labelAutoClose.Location = new Point(40, 388);
             labelAutoClose.Margin = new Padding(0);
             labelAutoClose.Name = "labelAutoClose";
-            labelAutoClose.Size = new Size(258, 32);
+            labelAutoClose.Size = new Size(250, 32);
             labelAutoClose.TabIndex = 5;
             labelAutoClose.Text = "Auto Close";
             // 
@@ -576,7 +576,7 @@
             labelGPUWorkingMode.Location = new Point(40, 464);
             labelGPUWorkingMode.Margin = new Padding(0);
             labelGPUWorkingMode.Name = "labelGPUWorkingMode";
-            labelGPUWorkingMode.Size = new Size(258, 32);
+            labelGPUWorkingMode.Size = new Size(250, 32);
             labelGPUWorkingMode.TabIndex = 6;
             labelGPUWorkingMode.Text = "GPU Working Mode";
             // 
@@ -589,7 +589,7 @@
             labelOverDrive.Location = new Point(40, 540);
             labelOverDrive.Margin = new Padding(0);
             labelOverDrive.Name = "labelOverDrive";
-            labelOverDrive.Size = new Size(258, 32);
+            labelOverDrive.Size = new Size(250, 32);
             labelOverDrive.TabIndex = 7;
             labelOverDrive.Text = "Over Drive";
             // 
@@ -602,7 +602,7 @@
             labelTouchpadLock.Location = new Point(40, 616);
             labelTouchpadLock.Margin = new Padding(0);
             labelTouchpadLock.Name = "labelTouchpadLock";
-            labelTouchpadLock.Size = new Size(258, 32);
+            labelTouchpadLock.Size = new Size(250, 32);
             labelTouchpadLock.TabIndex = 8;
             labelTouchpadLock.Text = "Touchpad Lock";
             // 
@@ -615,7 +615,7 @@
             labelQuick.Location = new Point(40, 722);
             labelQuick.Margin = new Padding(0);
             labelQuick.Name = "labelQuick";
-            labelQuick.Size = new Size(258, 45);
+            labelQuick.Size = new Size(250, 45);
             labelQuick.TabIndex = 9;
             labelQuick.Text = "Quick Settings";
             // 
@@ -628,7 +628,7 @@
             labelRapidCharge.Location = new Point(40, 811);
             labelRapidCharge.Margin = new Padding(0);
             labelRapidCharge.Name = "labelRapidCharge";
-            labelRapidCharge.Size = new Size(258, 32);
+            labelRapidCharge.Size = new Size(250, 32);
             labelRapidCharge.TabIndex = 10;
             labelRapidCharge.Text = "Legion Edge";
             // 
@@ -641,7 +641,7 @@
             labelWiFiSecurity.Location = new Point(40, 887);
             labelWiFiSecurity.Margin = new Padding(0);
             labelWiFiSecurity.Name = "labelWiFiSecurity";
-            labelWiFiSecurity.Size = new Size(258, 32);
+            labelWiFiSecurity.Size = new Size(250, 32);
             labelWiFiSecurity.TabIndex = 11;
             labelWiFiSecurity.Text = "WiFi Security";
             // 
@@ -649,10 +649,10 @@
             // 
             checkBox1.AutoSize = true;
             checkBox1.Dock = DockStyle.Bottom;
-            checkBox1.Location = new Point(435, 87);
+            checkBox1.Location = new Point(427, 87);
             checkBox1.Margin = new Padding(137, 0, 0, 0);
             checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(121, 29);
+            checkBox1.Size = new Size(114, 29);
             checkBox1.TabIndex = 13;
             checkBox1.Text = "checkBox1";
             checkBox1.UseVisualStyleBackColor = true;
