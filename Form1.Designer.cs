@@ -54,8 +54,6 @@
             checkBox6 = new CheckBox();
             checkBox5 = new CheckBox();
             checkBox4 = new CheckBox();
-            checkBox3 = new CheckBox();
-            checkBox2 = new CheckBox();
             label13 = new Label();
             labelLegionEdge = new Label();
             labelThermalMode = new Label();
@@ -68,6 +66,8 @@
             labelQuick = new Label();
             labelRapidCharge = new Label();
             labelWiFiSecurity = new Label();
+            checkBox2 = new CheckBox();
+            checkBox3 = new CheckBox();
             toolTip1 = new ToolTip(components);
             ((System.ComponentModel.ISupportInitialize)splitContainer).BeginInit();
             splitContainer.Panel1.SuspendLayout();
@@ -91,13 +91,15 @@
             splitContainer.Panel1.BackColor = SystemColors.ControlDarkDark;
             splitContainer.Panel1.Controls.Add(leftTableLayout);
             splitContainer.Panel1.Padding = new Padding(40);
+            splitContainer.Panel1MinSize = 900;
             // 
             // splitContainer.Panel2
             // 
             splitContainer.Panel2.Controls.Add(tableLayoutPanel1);
             splitContainer.Panel2.Padding = new Padding(40);
-            splitContainer.Size = new Size(1946, 1139);
-            splitContainer.SplitterDistance = 1236;
+            splitContainer.Panel2MinSize = 650;
+            splitContainer.Size = new Size(2053, 1139);
+            splitContainer.SplitterDistance = 1276;
             splitContainer.SplitterWidth = 10;
             splitContainer.TabIndex = 0;
             // 
@@ -124,21 +126,21 @@
             leftTableLayout.Controls.Add(buttonVRAM, 2, 0);
             leftTableLayout.Controls.Add(button1, 0, 0);
             leftTableLayout.Controls.Add(labelSystemTools, 0, 2);
-            leftTableLayout.Controls.Add(label1, 0, 5);
+            leftTableLayout.Controls.Add(label1, 0, 4);
             leftTableLayout.Dock = DockStyle.Fill;
             leftTableLayout.ForeColor = SystemColors.Control;
             leftTableLayout.Location = new Point(40, 40);
             leftTableLayout.Margin = new Padding(0);
             leftTableLayout.Name = "leftTableLayout";
             leftTableLayout.Padding = new Padding(40);
-            leftTableLayout.RowCount = 6;
-            leftTableLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 30F));
-            leftTableLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 5F));
-            leftTableLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 15F));
-            leftTableLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            leftTableLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 5F));
-            leftTableLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            leftTableLayout.Size = new Size(1156, 1059);
+            leftTableLayout.RowCount = 5;
+            leftTableLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 31.5789471F));
+            leftTableLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 5.263158F));
+            leftTableLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 15.7894735F));
+            leftTableLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 26.31579F));
+            leftTableLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 21.0526314F));
+            leftTableLayout.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            leftTableLayout.Size = new Size(1196, 1059);
             leftTableLayout.TabIndex = 0;
             // 
             // labelGPU
@@ -146,7 +148,7 @@
             labelGPU.BackColor = Color.Transparent;
             labelGPU.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelGPU.ForeColor = Color.Transparent;
-            labelGPU.Location = new Point(60, 334);
+            labelGPU.Location = new Point(60, 350);
             labelGPU.Margin = new Padding(20, 1, 0, 0);
             labelGPU.Name = "labelGPU";
             labelGPU.Size = new Size(65, 30);
@@ -157,7 +159,7 @@
             // 
             labelVRAM.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             labelVRAM.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelVRAM.Location = new Point(610, 334);
+            labelVRAM.Location = new Point(634, 350);
             labelVRAM.Margin = new Padding(0, 1, 0, 0);
             labelVRAM.Name = "labelVRAM";
             labelVRAM.Size = new Size(75, 30);
@@ -170,7 +172,7 @@
             labelSSD.AutoSize = true;
             labelSSD.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelSSD.ForeColor = SystemColors.Control;
-            labelSSD.Location = new Point(982, 334);
+            labelSSD.Location = new Point(1018, 350);
             labelSSD.Margin = new Padding(0, 1, 0, 0);
             labelSSD.Name = "labelSSD";
             labelSSD.Size = new Size(52, 30);
@@ -182,10 +184,10 @@
             buttonStorage.Dock = DockStyle.Bottom;
             buttonStorage.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
             buttonStorage.ForeColor = SystemColors.ControlText;
-            buttonStorage.Location = new Point(900, 180);
+            buttonStorage.Location = new Point(932, 196);
             buttonStorage.Margin = new Padding(0, 20, 0, 20);
             buttonStorage.Name = "buttonStorage";
-            buttonStorage.Size = new Size(216, 133);
+            buttonStorage.Size = new Size(224, 133);
             buttonStorage.TabIndex = 3;
             buttonStorage.Text = "88%";
             toolTip1.SetToolTip(buttonStorage, "Available space");
@@ -196,10 +198,10 @@
             buttonMacroKey.Dock = DockStyle.Top;
             buttonMacroKey.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             buttonMacroKey.ForeColor = SystemColors.ControlText;
-            buttonMacroKey.Location = new Point(275, 547);
+            buttonMacroKey.Location = new Point(283, 574);
             buttonMacroKey.Margin = new Padding(20);
             buttonMacroKey.Name = "buttonMacroKey";
-            buttonMacroKey.Size = new Size(175, 123);
+            buttonMacroKey.Size = new Size(183, 123);
             buttonMacroKey.TabIndex = 9;
             buttonMacroKey.Text = "Macro Key";
             buttonMacroKey.UseVisualStyleBackColor = true;
@@ -209,10 +211,10 @@
             buttonPower.Dock = DockStyle.Top;
             buttonPower.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             buttonPower.ForeColor = SystemColors.ControlText;
-            buttonPower.Location = new Point(490, 547);
+            buttonPower.Location = new Point(506, 574);
             buttonPower.Margin = new Padding(20);
             buttonPower.Name = "buttonPower";
-            buttonPower.Size = new Size(175, 123);
+            buttonPower.Size = new Size(183, 123);
             buttonPower.TabIndex = 10;
             buttonPower.Text = "Power";
             buttonPower.UseVisualStyleBackColor = true;
@@ -222,10 +224,10 @@
             buttonMedia.Dock = DockStyle.Top;
             buttonMedia.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             buttonMedia.ForeColor = SystemColors.ControlText;
-            buttonMedia.Location = new Point(705, 547);
+            buttonMedia.Location = new Point(729, 574);
             buttonMedia.Margin = new Padding(20);
             buttonMedia.Name = "buttonMedia";
-            buttonMedia.Size = new Size(175, 123);
+            buttonMedia.Size = new Size(183, 123);
             buttonMedia.TabIndex = 12;
             buttonMedia.Text = "Media";
             buttonMedia.UseVisualStyleBackColor = true;
@@ -235,10 +237,10 @@
             buttonHardwareScan.Dock = DockStyle.Top;
             buttonHardwareScan.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             buttonHardwareScan.ForeColor = SystemColors.ControlText;
-            buttonHardwareScan.Location = new Point(920, 547);
+            buttonHardwareScan.Location = new Point(952, 574);
             buttonHardwareScan.Margin = new Padding(20);
             buttonHardwareScan.Name = "buttonHardwareScan";
-            buttonHardwareScan.Size = new Size(176, 123);
+            buttonHardwareScan.Size = new Size(184, 123);
             buttonHardwareScan.TabIndex = 11;
             buttonHardwareScan.Text = "Hardware Scan";
             buttonHardwareScan.UseVisualStyleBackColor = true;
@@ -248,10 +250,10 @@
             buttonSystemUpdate.Dock = DockStyle.Top;
             buttonSystemUpdate.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             buttonSystemUpdate.ForeColor = SystemColors.ControlText;
-            buttonSystemUpdate.Location = new Point(60, 547);
+            buttonSystemUpdate.Location = new Point(60, 574);
             buttonSystemUpdate.Margin = new Padding(20);
             buttonSystemUpdate.Name = "buttonSystemUpdate";
-            buttonSystemUpdate.Size = new Size(175, 123);
+            buttonSystemUpdate.Size = new Size(183, 123);
             buttonSystemUpdate.TabIndex = 8;
             buttonSystemUpdate.Text = "System Update";
             buttonSystemUpdate.UseVisualStyleBackColor = true;
@@ -261,10 +263,10 @@
             buttonCPU.Dock = DockStyle.Bottom;
             buttonCPU.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
             buttonCPU.ForeColor = SystemColors.ControlText;
-            buttonCPU.Location = new Point(255, 88);
+            buttonCPU.Location = new Point(263, 124);
             buttonCPU.Margin = new Padding(0, 20, 0, 20);
             buttonCPU.Name = "buttonCPU";
-            buttonCPU.Size = new Size(215, 225);
+            buttonCPU.Size = new Size(223, 205);
             buttonCPU.TabIndex = 0;
             buttonCPU.Text = "CPU";
             toolTip1.SetToolTip(buttonCPU, "CPU usage");
@@ -275,10 +277,10 @@
             buttonVRAM.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             buttonVRAM.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
             buttonVRAM.ForeColor = SystemColors.ControlText;
-            buttonVRAM.Location = new Point(620, 70);
+            buttonVRAM.Location = new Point(644, 70);
             buttonVRAM.Margin = new Padding(20, 30, 20, 30);
             buttonVRAM.Name = "buttonVRAM";
-            buttonVRAM.Size = new Size(45, 233);
+            buttonVRAM.Size = new Size(45, 249);
             buttonVRAM.TabIndex = 2;
             toolTip1.SetToolTip(buttonVRAM, "VRAM usage");
             buttonVRAM.UseVisualStyleBackColor = true;
@@ -291,7 +293,7 @@
             button1.Location = new Point(60, 70);
             button1.Margin = new Padding(20, 30, 20, 30);
             button1.Name = "button1";
-            button1.Size = new Size(45, 233);
+            button1.Size = new Size(45, 249);
             button1.TabIndex = 14;
             toolTip1.SetToolTip(button1, "VRAM usage");
             button1.UseVisualStyleBackColor = true;
@@ -300,22 +302,22 @@
             // 
             labelSystemTools.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             labelSystemTools.AutoSize = true;
-            labelSystemTools.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelSystemTools.Location = new Point(40, 489);
+            labelSystemTools.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelSystemTools.Location = new Point(40, 509);
             labelSystemTools.Margin = new Padding(0);
             labelSystemTools.Name = "labelSystemTools";
-            labelSystemTools.Size = new Size(176, 38);
+            labelSystemTools.Size = new Size(204, 45);
             labelSystemTools.TabIndex = 7;
             labelSystemTools.Text = "System Tools";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(40, 820);
+            label1.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(40, 812);
             label1.Margin = new Padding(0, 1, 0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(194, 38);
+            label1.Size = new Size(223, 45);
             label1.TabIndex = 13;
             label1.Text = "System Health";
             // 
@@ -366,7 +368,7 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 7.958257F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 7.958257F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 7.958257F));
-            tableLayoutPanel1.Size = new Size(620, 1059);
+            tableLayoutPanel1.Size = new Size(687, 1059);
             tableLayoutPanel1.TabIndex = 0;
             // 
             // checkBox12
@@ -374,12 +376,12 @@
             checkBox12.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             checkBox12.AutoSize = true;
             checkBox12.ForeColor = SystemColors.Control;
-            checkBox12.Location = new Point(449, 990);
+            checkBox12.Location = new Point(536, 990);
             checkBox12.Margin = new Padding(130, 0, 0, 0);
             checkBox12.Name = "checkBox12";
-            checkBox12.Size = new Size(131, 29);
+            checkBox12.Size = new Size(111, 29);
             checkBox12.TabIndex = 24;
-            checkBox12.Text = "checkBox12";
+            checkBox12.Text = "checkBox";
             checkBox12.UseVisualStyleBackColor = true;
             // 
             // checkBox11
@@ -387,12 +389,12 @@
             checkBox11.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             checkBox11.AutoSize = true;
             checkBox11.ForeColor = SystemColors.Control;
-            checkBox11.Location = new Point(449, 902);
+            checkBox11.Location = new Point(536, 902);
             checkBox11.Margin = new Padding(130, 0, 0, 0);
             checkBox11.Name = "checkBox11";
-            checkBox11.Size = new Size(131, 29);
+            checkBox11.Size = new Size(111, 29);
             checkBox11.TabIndex = 23;
-            checkBox11.Text = "checkBox11";
+            checkBox11.Text = "checkBox";
             checkBox11.UseVisualStyleBackColor = true;
             // 
             // checkBox10
@@ -400,115 +402,89 @@
             checkBox10.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             checkBox10.AutoSize = true;
             checkBox10.ForeColor = SystemColors.Control;
-            checkBox10.Location = new Point(449, 825);
+            checkBox10.Location = new Point(536, 825);
             checkBox10.Margin = new Padding(120, 0, 0, 0);
             checkBox10.Name = "checkBox10";
-            checkBox10.Size = new Size(131, 29);
+            checkBox10.Size = new Size(111, 29);
             checkBox10.TabIndex = 22;
-            checkBox10.Text = "checkBox10";
+            checkBox10.Text = "checkBox";
             checkBox10.UseVisualStyleBackColor = true;
             // 
             // checkBox8
             // 
-            checkBox8.Anchor = AnchorStyles.Bottom;
+            checkBox8.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             checkBox8.AutoSize = true;
             checkBox8.ForeColor = SystemColors.Control;
-            checkBox8.Location = new Point(449, 627);
+            checkBox8.Location = new Point(536, 627);
             checkBox8.Margin = new Padding(130, 0, 0, 0);
             checkBox8.Name = "checkBox8";
-            checkBox8.Size = new Size(121, 29);
+            checkBox8.Size = new Size(111, 29);
             checkBox8.TabIndex = 20;
-            checkBox8.Text = "checkBox8";
+            checkBox8.Text = "checkBox";
             checkBox8.UseVisualStyleBackColor = true;
             // 
             // checkBox7
             // 
-            checkBox7.Anchor = AnchorStyles.Bottom;
+            checkBox7.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             checkBox7.AutoSize = true;
             checkBox7.ForeColor = SystemColors.Control;
-            checkBox7.Location = new Point(449, 550);
+            checkBox7.Location = new Point(536, 550);
             checkBox7.Margin = new Padding(130, 0, 0, 0);
             checkBox7.Name = "checkBox7";
-            checkBox7.Size = new Size(121, 29);
+            checkBox7.Size = new Size(111, 29);
             checkBox7.TabIndex = 19;
-            checkBox7.Text = "checkBox7";
+            checkBox7.Text = "checkBox";
             checkBox7.UseVisualStyleBackColor = true;
             // 
             // checkBox6
             // 
-            checkBox6.Anchor = AnchorStyles.Bottom;
+            checkBox6.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             checkBox6.AutoSize = true;
             checkBox6.ForeColor = SystemColors.Control;
-            checkBox6.Location = new Point(449, 473);
+            checkBox6.Location = new Point(536, 473);
             checkBox6.Margin = new Padding(130, 0, 0, 0);
             checkBox6.Name = "checkBox6";
-            checkBox6.Size = new Size(121, 29);
+            checkBox6.Size = new Size(111, 29);
             checkBox6.TabIndex = 18;
-            checkBox6.Text = "checkBox6";
+            checkBox6.Text = "checkBox";
             checkBox6.UseVisualStyleBackColor = true;
             // 
             // checkBox5
             // 
-            checkBox5.Anchor = AnchorStyles.Bottom;
+            checkBox5.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             checkBox5.AutoSize = true;
             checkBox5.ForeColor = SystemColors.Control;
-            checkBox5.Location = new Point(449, 396);
+            checkBox5.Location = new Point(536, 396);
             checkBox5.Margin = new Padding(130, 0, 0, 0);
             checkBox5.Name = "checkBox5";
-            checkBox5.Size = new Size(121, 29);
+            checkBox5.Size = new Size(111, 29);
             checkBox5.TabIndex = 17;
-            checkBox5.Text = "checkBox5";
+            checkBox5.Text = "checkBox";
             checkBox5.UseVisualStyleBackColor = true;
             // 
             // checkBox4
             // 
-            checkBox4.Anchor = AnchorStyles.Bottom;
+            checkBox4.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             checkBox4.AutoSize = true;
             checkBox4.ForeColor = SystemColors.Control;
-            checkBox4.Location = new Point(449, 319);
+            checkBox4.Location = new Point(536, 319);
             checkBox4.Margin = new Padding(130, 0, 0, 0);
             checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(121, 29);
+            checkBox4.Size = new Size(111, 29);
             checkBox4.TabIndex = 16;
-            checkBox4.Text = "checkBox4";
+            checkBox4.Text = "checkBox";
             checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            checkBox3.Anchor = AnchorStyles.Bottom;
-            checkBox3.AutoSize = true;
-            checkBox3.ForeColor = SystemColors.Control;
-            checkBox3.Location = new Point(449, 242);
-            checkBox3.Margin = new Padding(130, 0, 0, 0);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(121, 29);
-            checkBox3.TabIndex = 15;
-            checkBox3.Text = "checkBox3";
-            checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            checkBox2.Anchor = AnchorStyles.Bottom;
-            checkBox2.AutoSize = true;
-            checkBox2.ForeColor = SystemColors.Control;
-            checkBox2.Location = new Point(449, 165);
-            checkBox2.Margin = new Padding(130, 0, 0, 0);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(121, 29);
-            checkBox2.TabIndex = 14;
-            checkBox2.Text = "checkBox2";
-            checkBox2.UseVisualStyleBackColor = true;
             // 
             // label13
             // 
             label13.AutoSize = true;
             label13.Dock = DockStyle.Bottom;
-            label13.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label13.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label13.ForeColor = SystemColors.Control;
-            label13.Location = new Point(40, 987);
+            label13.Location = new Point(40, 981);
             label13.Margin = new Padding(0);
             label13.Name = "label13";
-            label13.Size = new Size(270, 32);
+            label13.Size = new Size(303, 38);
             label13.TabIndex = 12;
             label13.Text = "Adaptive Refresh Rate";
             // 
@@ -521,7 +497,7 @@
             labelLegionEdge.Location = new Point(40, 69);
             labelLegionEdge.Margin = new Padding(0);
             labelLegionEdge.Name = "labelLegionEdge";
-            labelLegionEdge.Size = new Size(270, 48);
+            labelLegionEdge.Size = new Size(303, 48);
             labelLegionEdge.TabIndex = 1;
             labelLegionEdge.Text = "Legion Edge";
             // 
@@ -529,12 +505,12 @@
             // 
             labelThermalMode.AutoSize = true;
             labelThermalMode.Dock = DockStyle.Bottom;
-            labelThermalMode.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelThermalMode.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelThermalMode.ForeColor = SystemColors.Control;
-            labelThermalMode.Location = new Point(40, 162);
+            labelThermalMode.Location = new Point(40, 156);
             labelThermalMode.Margin = new Padding(0);
             labelThermalMode.Name = "labelThermalMode";
-            labelThermalMode.Size = new Size(270, 32);
+            labelThermalMode.Size = new Size(303, 38);
             labelThermalMode.TabIndex = 2;
             labelThermalMode.Text = "Thermal Mode";
             // 
@@ -542,12 +518,12 @@
             // 
             labelGPUOverlock.AutoSize = true;
             labelGPUOverlock.Dock = DockStyle.Bottom;
-            labelGPUOverlock.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelGPUOverlock.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelGPUOverlock.ForeColor = SystemColors.Control;
-            labelGPUOverlock.Location = new Point(40, 239);
+            labelGPUOverlock.Location = new Point(40, 233);
             labelGPUOverlock.Margin = new Padding(0);
             labelGPUOverlock.Name = "labelGPUOverlock";
-            labelGPUOverlock.Size = new Size(270, 32);
+            labelGPUOverlock.Size = new Size(303, 38);
             labelGPUOverlock.TabIndex = 3;
             labelGPUOverlock.Text = "GPU Overclock";
             // 
@@ -555,12 +531,12 @@
             // 
             labelNetworkBoost.AutoSize = true;
             labelNetworkBoost.Dock = DockStyle.Bottom;
-            labelNetworkBoost.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelNetworkBoost.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelNetworkBoost.ForeColor = SystemColors.Control;
-            labelNetworkBoost.Location = new Point(40, 316);
+            labelNetworkBoost.Location = new Point(40, 310);
             labelNetworkBoost.Margin = new Padding(0);
             labelNetworkBoost.Name = "labelNetworkBoost";
-            labelNetworkBoost.Size = new Size(270, 32);
+            labelNetworkBoost.Size = new Size(303, 38);
             labelNetworkBoost.TabIndex = 4;
             labelNetworkBoost.Text = "Network Boost";
             // 
@@ -568,12 +544,12 @@
             // 
             labelAutoClose.AutoSize = true;
             labelAutoClose.Dock = DockStyle.Bottom;
-            labelAutoClose.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelAutoClose.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelAutoClose.ForeColor = SystemColors.Control;
-            labelAutoClose.Location = new Point(40, 393);
+            labelAutoClose.Location = new Point(40, 387);
             labelAutoClose.Margin = new Padding(0);
             labelAutoClose.Name = "labelAutoClose";
-            labelAutoClose.Size = new Size(270, 32);
+            labelAutoClose.Size = new Size(303, 38);
             labelAutoClose.TabIndex = 5;
             labelAutoClose.Text = "Auto Close";
             // 
@@ -581,12 +557,12 @@
             // 
             labelGPUWorkingMode.AutoSize = true;
             labelGPUWorkingMode.Dock = DockStyle.Bottom;
-            labelGPUWorkingMode.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelGPUWorkingMode.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelGPUWorkingMode.ForeColor = SystemColors.Control;
-            labelGPUWorkingMode.Location = new Point(40, 470);
+            labelGPUWorkingMode.Location = new Point(40, 464);
             labelGPUWorkingMode.Margin = new Padding(0);
             labelGPUWorkingMode.Name = "labelGPUWorkingMode";
-            labelGPUWorkingMode.Size = new Size(270, 32);
+            labelGPUWorkingMode.Size = new Size(303, 38);
             labelGPUWorkingMode.TabIndex = 6;
             labelGPUWorkingMode.Text = "GPU Working Mode";
             // 
@@ -594,12 +570,12 @@
             // 
             labelOverDrive.AutoSize = true;
             labelOverDrive.Dock = DockStyle.Bottom;
-            labelOverDrive.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelOverDrive.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelOverDrive.ForeColor = SystemColors.Control;
-            labelOverDrive.Location = new Point(40, 547);
+            labelOverDrive.Location = new Point(40, 541);
             labelOverDrive.Margin = new Padding(0);
             labelOverDrive.Name = "labelOverDrive";
-            labelOverDrive.Size = new Size(270, 32);
+            labelOverDrive.Size = new Size(303, 38);
             labelOverDrive.TabIndex = 7;
             labelOverDrive.Text = "Over Drive";
             // 
@@ -607,12 +583,12 @@
             // 
             labelTouchpadLock.AutoSize = true;
             labelTouchpadLock.Dock = DockStyle.Bottom;
-            labelTouchpadLock.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelTouchpadLock.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelTouchpadLock.ForeColor = SystemColors.Control;
-            labelTouchpadLock.Location = new Point(40, 624);
+            labelTouchpadLock.Location = new Point(40, 618);
             labelTouchpadLock.Margin = new Padding(0);
             labelTouchpadLock.Name = "labelTouchpadLock";
-            labelTouchpadLock.Size = new Size(270, 32);
+            labelTouchpadLock.Size = new Size(303, 38);
             labelTouchpadLock.TabIndex = 8;
             labelTouchpadLock.Text = "Touchpad Lock";
             // 
@@ -625,7 +601,7 @@
             labelQuick.Location = new Point(40, 729);
             labelQuick.Margin = new Padding(0);
             labelQuick.Name = "labelQuick";
-            labelQuick.Size = new Size(270, 48);
+            labelQuick.Size = new Size(303, 48);
             labelQuick.TabIndex = 9;
             labelQuick.Text = "Quick Settings";
             // 
@@ -633,12 +609,12 @@
             // 
             labelRapidCharge.AutoSize = true;
             labelRapidCharge.Dock = DockStyle.Bottom;
-            labelRapidCharge.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelRapidCharge.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelRapidCharge.ForeColor = SystemColors.Control;
-            labelRapidCharge.Location = new Point(40, 822);
+            labelRapidCharge.Location = new Point(40, 816);
             labelRapidCharge.Margin = new Padding(0);
             labelRapidCharge.Name = "labelRapidCharge";
-            labelRapidCharge.Size = new Size(270, 32);
+            labelRapidCharge.Size = new Size(303, 38);
             labelRapidCharge.TabIndex = 10;
             labelRapidCharge.Text = "Rapid Charge";
             // 
@@ -646,22 +622,50 @@
             // 
             labelWiFiSecurity.AutoSize = true;
             labelWiFiSecurity.Dock = DockStyle.Bottom;
-            labelWiFiSecurity.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelWiFiSecurity.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelWiFiSecurity.ForeColor = SystemColors.Control;
-            labelWiFiSecurity.Location = new Point(40, 899);
+            labelWiFiSecurity.Location = new Point(40, 893);
             labelWiFiSecurity.Margin = new Padding(0);
             labelWiFiSecurity.Name = "labelWiFiSecurity";
-            labelWiFiSecurity.Size = new Size(270, 32);
+            labelWiFiSecurity.Size = new Size(303, 38);
             labelWiFiSecurity.TabIndex = 11;
             labelWiFiSecurity.Text = "WiFi Security";
+            // 
+            // checkBox2
+            // 
+            checkBox2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            checkBox2.AutoSize = true;
+            checkBox2.ForeColor = SystemColors.Control;
+            checkBox2.Location = new Point(536, 165);
+            checkBox2.Margin = new Padding(130, 0, 0, 0);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(111, 29);
+            checkBox2.TabIndex = 14;
+            checkBox2.Text = "checkBox";
+            checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            checkBox3.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            checkBox3.AutoSize = true;
+            checkBox3.ForeColor = SystemColors.Control;
+            checkBox3.Location = new Point(536, 242);
+            checkBox3.Margin = new Padding(130, 0, 0, 0);
+            checkBox3.Name = "checkBox3";
+            checkBox3.Size = new Size(111, 29);
+            checkBox3.TabIndex = 15;
+            checkBox3.Text = "checkBox";
+            checkBox3.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
-            ClientSize = new Size(1946, 1139);
+            ClientSize = new Size(2053, 1139);
             Controls.Add(splitContainer);
+            MaximumSize = new Size(2409, 1401);
+            MinimumSize = new Size(1743, 992);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "LenovoUI";
