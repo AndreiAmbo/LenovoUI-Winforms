@@ -334,8 +334,6 @@
             tableLayoutPanel1.Controls.Add(checkBox6, 1, 5);
             tableLayoutPanel1.Controls.Add(checkBox5, 1, 4);
             tableLayoutPanel1.Controls.Add(checkBox4, 1, 3);
-            tableLayoutPanel1.Controls.Add(checkBox3, 1, 2);
-            tableLayoutPanel1.Controls.Add(checkBox2, 1, 1);
             tableLayoutPanel1.Controls.Add(label13, 0, 11);
             tableLayoutPanel1.Controls.Add(labelLegionEdge, 0, 0);
             tableLayoutPanel1.Controls.Add(labelThermalMode, 0, 1);
@@ -348,6 +346,8 @@
             tableLayoutPanel1.Controls.Add(labelQuick, 0, 8);
             tableLayoutPanel1.Controls.Add(labelRapidCharge, 0, 9);
             tableLayoutPanel1.Controls.Add(labelWiFiSecurity, 0, 10);
+            tableLayoutPanel1.Controls.Add(checkBox2, 1, 1);
+            tableLayoutPanel1.Controls.Add(checkBox3, 1, 2);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(40, 40);
             tableLayoutPanel1.Margin = new Padding(0);
@@ -401,7 +401,7 @@
             checkBox10.AutoSize = true;
             checkBox10.ForeColor = SystemColors.Control;
             checkBox10.Location = new Point(449, 825);
-            checkBox10.Margin = new Padding(130, 0, 0, 0);
+            checkBox10.Margin = new Padding(120, 0, 0, 0);
             checkBox10.Name = "checkBox10";
             checkBox10.Size = new Size(131, 29);
             checkBox10.TabIndex = 22;
@@ -410,10 +410,10 @@
             // 
             // checkBox8
             // 
-            checkBox8.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            checkBox8.Anchor = AnchorStyles.Bottom;
             checkBox8.AutoSize = true;
             checkBox8.ForeColor = SystemColors.Control;
-            checkBox8.Location = new Point(459, 627);
+            checkBox8.Location = new Point(449, 627);
             checkBox8.Margin = new Padding(130, 0, 0, 0);
             checkBox8.Name = "checkBox8";
             checkBox8.Size = new Size(121, 29);
@@ -423,10 +423,10 @@
             // 
             // checkBox7
             // 
-            checkBox7.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            checkBox7.Anchor = AnchorStyles.Bottom;
             checkBox7.AutoSize = true;
             checkBox7.ForeColor = SystemColors.Control;
-            checkBox7.Location = new Point(459, 550);
+            checkBox7.Location = new Point(449, 550);
             checkBox7.Margin = new Padding(130, 0, 0, 0);
             checkBox7.Name = "checkBox7";
             checkBox7.Size = new Size(121, 29);
@@ -436,10 +436,10 @@
             // 
             // checkBox6
             // 
-            checkBox6.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            checkBox6.Anchor = AnchorStyles.Bottom;
             checkBox6.AutoSize = true;
             checkBox6.ForeColor = SystemColors.Control;
-            checkBox6.Location = new Point(459, 473);
+            checkBox6.Location = new Point(449, 473);
             checkBox6.Margin = new Padding(130, 0, 0, 0);
             checkBox6.Name = "checkBox6";
             checkBox6.Size = new Size(121, 29);
@@ -449,10 +449,10 @@
             // 
             // checkBox5
             // 
-            checkBox5.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            checkBox5.Anchor = AnchorStyles.Bottom;
             checkBox5.AutoSize = true;
             checkBox5.ForeColor = SystemColors.Control;
-            checkBox5.Location = new Point(459, 396);
+            checkBox5.Location = new Point(449, 396);
             checkBox5.Margin = new Padding(130, 0, 0, 0);
             checkBox5.Name = "checkBox5";
             checkBox5.Size = new Size(121, 29);
@@ -462,10 +462,10 @@
             // 
             // checkBox4
             // 
-            checkBox4.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            checkBox4.Anchor = AnchorStyles.Bottom;
             checkBox4.AutoSize = true;
             checkBox4.ForeColor = SystemColors.Control;
-            checkBox4.Location = new Point(459, 319);
+            checkBox4.Location = new Point(449, 319);
             checkBox4.Margin = new Padding(130, 0, 0, 0);
             checkBox4.Name = "checkBox4";
             checkBox4.Size = new Size(121, 29);
@@ -475,10 +475,10 @@
             // 
             // checkBox3
             // 
-            checkBox3.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            checkBox3.Anchor = AnchorStyles.Bottom;
             checkBox3.AutoSize = true;
             checkBox3.ForeColor = SystemColors.Control;
-            checkBox3.Location = new Point(459, 242);
+            checkBox3.Location = new Point(449, 242);
             checkBox3.Margin = new Padding(130, 0, 0, 0);
             checkBox3.Name = "checkBox3";
             checkBox3.Size = new Size(121, 29);
@@ -488,10 +488,10 @@
             // 
             // checkBox2
             // 
-            checkBox2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            checkBox2.Anchor = AnchorStyles.Bottom;
             checkBox2.AutoSize = true;
             checkBox2.ForeColor = SystemColors.Control;
-            checkBox2.Location = new Point(459, 165);
+            checkBox2.Location = new Point(449, 165);
             checkBox2.Margin = new Padding(130, 0, 0, 0);
             checkBox2.Name = "checkBox2";
             checkBox2.Size = new Size(121, 29);
