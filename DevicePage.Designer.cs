@@ -30,24 +30,6 @@
         {
             panelLegion = new Panel();
             label4 = new Label();
-            splitContainer1 = new SplitContainer();
-            layoutPanel1 = new TableLayoutPanel();
-            layoutSystemHealth = new TableLayoutPanel();
-            labelSystemHealth = new Label();
-            labelSystemTools = new Label();
-            panelCPU = new Panel();
-            layoutPanelCPU = new TableLayoutPanel();
-            buttonCPU = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
-            panel1 = new Panel();
-            layoutSystemTools = new TableLayoutPanel();
-            buttonSystemUpdate = new Button();
-            buttonMacroKey = new Button();
-            buttonPower = new Button();
-            buttonMedia = new Button();
-            buttonHardwareScan = new Button();
             layoutPanel2 = new TableLayoutPanel();
             labelQuickSettings = new Label();
             panelLegionEdge = new Panel();
@@ -67,7 +49,6 @@
             labelGpuOverclock = new Label();
             labelLegionEdge = new Label();
             labelThermalMode = new Label();
-            checkBox1 = new CheckBox();
             panelQuickSettingsItems = new Panel();
             layoutQuickSettingsItems = new TableLayoutPanel();
             checkBox11 = new CheckBox();
@@ -76,22 +57,42 @@
             labelAdaptiveRefreshRate = new Label();
             labelWifiSecurity = new Label();
             labelRapidCharge = new Label();
+            layoutPanel1 = new TableLayoutPanel();
+            labelSystemTools = new Label();
+            panelCPU = new Panel();
+            layoutPanelCPU = new TableLayoutPanel();
+            buttonCPU = new Button();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
+            panelSystemTools = new Panel();
+            layoutSystemTools = new TableLayoutPanel();
+            buttonSystemUpdate = new Button();
+            buttonMacroKey = new Button();
+            buttonPower = new Button();
+            buttonMedia = new Button();
+            buttonHardwareScan = new Button();
+            panelSystemHealth = new Panel();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            label1 = new Label();
+            splitContainer1 = new SplitContainer();
             panelLegion.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
-            splitContainer1.Panel1.SuspendLayout();
-            splitContainer1.Panel2.SuspendLayout();
-            splitContainer1.SuspendLayout();
-            layoutPanel1.SuspendLayout();
-            layoutSystemHealth.SuspendLayout();
-            panelCPU.SuspendLayout();
-            layoutPanelCPU.SuspendLayout();
-            panel1.SuspendLayout();
-            layoutSystemTools.SuspendLayout();
             layoutPanel2.SuspendLayout();
             panelLegionEdge.SuspendLayout();
             layoutLegionEdge.SuspendLayout();
             panelQuickSettingsItems.SuspendLayout();
             layoutQuickSettingsItems.SuspendLayout();
+            layoutPanel1.SuspendLayout();
+            panelCPU.SuspendLayout();
+            layoutPanelCPU.SuspendLayout();
+            panelSystemTools.SuspendLayout();
+            layoutSystemTools.SuspendLayout();
+            panelSystemHealth.SuspendLayout();
+            tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
+            splitContainer1.Panel1.SuspendLayout();
+            splitContainer1.Panel2.SuspendLayout();
+            splitContainer1.SuspendLayout();
             SuspendLayout();
             // 
             // panelLegion
@@ -101,7 +102,7 @@
             panelLegion.Dock = DockStyle.Top;
             panelLegion.Location = new Point(0, 0);
             panelLegion.Name = "panelLegion";
-            panelLegion.Size = new Size(1904, 139);
+            panelLegion.Size = new Size(1929, 139);
             panelLegion.TabIndex = 1;
             // 
             // label4
@@ -116,32 +117,384 @@
             label4.TabIndex = 2;
             label4.Text = "LEGION";
             // 
-            // splitContainer1
+            // layoutPanel2
             // 
-            splitContainer1.Dock = DockStyle.Fill;
-            splitContainer1.Location = new Point(0, 139);
-            splitContainer1.Name = "splitContainer1";
+            layoutPanel2.ColumnCount = 1;
+            layoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            layoutPanel2.Controls.Add(labelQuickSettings, 0, 1);
+            layoutPanel2.Controls.Add(panelLegionEdge, 0, 0);
+            layoutPanel2.Controls.Add(panelQuickSettingsItems, 0, 2);
+            layoutPanel2.Dock = DockStyle.Fill;
+            layoutPanel2.Location = new Point(0, 0);
+            layoutPanel2.Name = "layoutPanel2";
+            layoutPanel2.RowCount = 3;
+            layoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 63.61923F));
+            layoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 6.3147974F));
+            layoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 30F));
+            layoutPanel2.Size = new Size(676, 1086);
+            layoutPanel2.TabIndex = 0;
             // 
-            // splitContainer1.Panel1
+            // labelQuickSettings
             // 
-            splitContainer1.Panel1.Controls.Add(layoutPanel1);
+            labelQuickSettings.AutoSize = true;
+            labelQuickSettings.Dock = DockStyle.Bottom;
+            labelQuickSettings.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelQuickSettings.ForeColor = SystemColors.Control;
+            labelQuickSettings.Location = new Point(3, 705);
+            labelQuickSettings.Name = "labelQuickSettings";
+            labelQuickSettings.Size = new Size(670, 54);
+            labelQuickSettings.TabIndex = 22;
+            labelQuickSettings.Text = "Quick Settings";
             // 
-            // splitContainer1.Panel2
+            // panelLegionEdge
             // 
-            splitContainer1.Panel2.Controls.Add(layoutPanel2);
-            splitContainer1.Size = new Size(1904, 1061);
-            splitContainer1.SplitterDistance = 1228;
-            splitContainer1.SplitterWidth = 10;
-            splitContainer1.TabIndex = 2;
+            panelLegionEdge.BackColor = SystemColors.ControlDarkDark;
+            panelLegionEdge.BorderStyle = BorderStyle.Fixed3D;
+            panelLegionEdge.Controls.Add(layoutLegionEdge);
+            panelLegionEdge.Dock = DockStyle.Fill;
+            panelLegionEdge.Location = new Point(3, 3);
+            panelLegionEdge.Name = "panelLegionEdge";
+            panelLegionEdge.Size = new Size(670, 685);
+            panelLegionEdge.TabIndex = 0;
+            // 
+            // layoutLegionEdge
+            // 
+            layoutLegionEdge.BackColor = Color.DarkSlateGray;
+            layoutLegionEdge.ColumnCount = 2;
+            layoutLegionEdge.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 70F));
+            layoutLegionEdge.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30F));
+            layoutLegionEdge.Controls.Add(checkBox8, 1, 7);
+            layoutLegionEdge.Controls.Add(checkBox7, 1, 6);
+            layoutLegionEdge.Controls.Add(checkBox6, 1, 5);
+            layoutLegionEdge.Controls.Add(checkBox5, 1, 4);
+            layoutLegionEdge.Controls.Add(checkBox4, 1, 3);
+            layoutLegionEdge.Controls.Add(checkBox3, 1, 2);
+            layoutLegionEdge.Controls.Add(checkBox2, 1, 1);
+            layoutLegionEdge.Controls.Add(labelTouchpadLock, 0, 7);
+            layoutLegionEdge.Controls.Add(labelOverDrive, 0, 6);
+            layoutLegionEdge.Controls.Add(labelGpuWorkingMode, 0, 5);
+            layoutLegionEdge.Controls.Add(labelAutoClose, 0, 4);
+            layoutLegionEdge.Controls.Add(labelNetworkBoost, 0, 3);
+            layoutLegionEdge.Controls.Add(labelGpuOverclock, 0, 2);
+            layoutLegionEdge.Controls.Add(labelLegionEdge, 0, 0);
+            layoutLegionEdge.Controls.Add(labelThermalMode, 0, 1);
+            layoutLegionEdge.Dock = DockStyle.Fill;
+            layoutLegionEdge.Location = new Point(0, 0);
+            layoutLegionEdge.Name = "layoutLegionEdge";
+            layoutLegionEdge.RowCount = 8;
+            layoutLegionEdge.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
+            layoutLegionEdge.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
+            layoutLegionEdge.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
+            layoutLegionEdge.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
+            layoutLegionEdge.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
+            layoutLegionEdge.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
+            layoutLegionEdge.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
+            layoutLegionEdge.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
+            layoutLegionEdge.Size = new Size(666, 681);
+            layoutLegionEdge.TabIndex = 0;
+            // 
+            // checkBox8
+            // 
+            checkBox8.AutoSize = true;
+            checkBox8.Dock = DockStyle.Bottom;
+            checkBox8.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            checkBox8.ForeColor = SystemColors.Control;
+            checkBox8.Location = new Point(469, 646);
+            checkBox8.Name = "checkBox8";
+            checkBox8.Size = new Size(194, 32);
+            checkBox8.TabIndex = 39;
+            checkBox8.Text = "checkBox";
+            checkBox8.UseVisualStyleBackColor = true;
+            // 
+            // checkBox7
+            // 
+            checkBox7.AutoSize = true;
+            checkBox7.Dock = DockStyle.Bottom;
+            checkBox7.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            checkBox7.ForeColor = SystemColors.Control;
+            checkBox7.Location = new Point(469, 560);
+            checkBox7.Name = "checkBox7";
+            checkBox7.Size = new Size(194, 32);
+            checkBox7.TabIndex = 38;
+            checkBox7.Text = "checkBox";
+            checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // checkBox6
+            // 
+            checkBox6.AutoSize = true;
+            checkBox6.Dock = DockStyle.Bottom;
+            checkBox6.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            checkBox6.ForeColor = SystemColors.Control;
+            checkBox6.Location = new Point(469, 475);
+            checkBox6.Name = "checkBox6";
+            checkBox6.Size = new Size(194, 32);
+            checkBox6.TabIndex = 37;
+            checkBox6.Text = "checkBox";
+            checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            checkBox5.AutoSize = true;
+            checkBox5.Dock = DockStyle.Bottom;
+            checkBox5.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            checkBox5.ForeColor = SystemColors.Control;
+            checkBox5.Location = new Point(469, 390);
+            checkBox5.Name = "checkBox5";
+            checkBox5.Size = new Size(194, 32);
+            checkBox5.TabIndex = 36;
+            checkBox5.Text = "checkBox";
+            checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            checkBox4.AutoSize = true;
+            checkBox4.Dock = DockStyle.Bottom;
+            checkBox4.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            checkBox4.ForeColor = SystemColors.Control;
+            checkBox4.Location = new Point(469, 305);
+            checkBox4.Name = "checkBox4";
+            checkBox4.Size = new Size(194, 32);
+            checkBox4.TabIndex = 35;
+            checkBox4.Text = "checkBox";
+            checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            checkBox3.AutoSize = true;
+            checkBox3.Dock = DockStyle.Bottom;
+            checkBox3.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            checkBox3.ForeColor = SystemColors.Control;
+            checkBox3.Location = new Point(469, 220);
+            checkBox3.Name = "checkBox3";
+            checkBox3.Size = new Size(194, 32);
+            checkBox3.TabIndex = 34;
+            checkBox3.Text = "checkBox";
+            checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            checkBox2.AutoSize = true;
+            checkBox2.Dock = DockStyle.Bottom;
+            checkBox2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            checkBox2.ForeColor = SystemColors.Control;
+            checkBox2.Location = new Point(469, 135);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(194, 32);
+            checkBox2.TabIndex = 33;
+            checkBox2.Text = "checkBox";
+            checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // labelTouchpadLock
+            // 
+            labelTouchpadLock.AutoSize = true;
+            labelTouchpadLock.Dock = DockStyle.Bottom;
+            labelTouchpadLock.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelTouchpadLock.ForeColor = SystemColors.Control;
+            labelTouchpadLock.Location = new Point(3, 643);
+            labelTouchpadLock.Name = "labelTouchpadLock";
+            labelTouchpadLock.Size = new Size(460, 38);
+            labelTouchpadLock.TabIndex = 31;
+            labelTouchpadLock.Text = "Touchpad Lock";
+            // 
+            // labelOverDrive
+            // 
+            labelOverDrive.AutoSize = true;
+            labelOverDrive.Dock = DockStyle.Bottom;
+            labelOverDrive.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelOverDrive.ForeColor = SystemColors.Control;
+            labelOverDrive.Location = new Point(3, 557);
+            labelOverDrive.Name = "labelOverDrive";
+            labelOverDrive.Size = new Size(460, 38);
+            labelOverDrive.TabIndex = 29;
+            labelOverDrive.Text = "Over Drive";
+            // 
+            // labelGpuWorkingMode
+            // 
+            labelGpuWorkingMode.AutoSize = true;
+            labelGpuWorkingMode.Dock = DockStyle.Bottom;
+            labelGpuWorkingMode.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelGpuWorkingMode.ForeColor = SystemColors.Control;
+            labelGpuWorkingMode.Location = new Point(3, 472);
+            labelGpuWorkingMode.Name = "labelGpuWorkingMode";
+            labelGpuWorkingMode.Size = new Size(460, 38);
+            labelGpuWorkingMode.TabIndex = 27;
+            labelGpuWorkingMode.Text = "GPU Working Mode";
+            // 
+            // labelAutoClose
+            // 
+            labelAutoClose.AutoSize = true;
+            labelAutoClose.Dock = DockStyle.Bottom;
+            labelAutoClose.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelAutoClose.ForeColor = SystemColors.Control;
+            labelAutoClose.Location = new Point(3, 387);
+            labelAutoClose.Name = "labelAutoClose";
+            labelAutoClose.Size = new Size(460, 38);
+            labelAutoClose.TabIndex = 25;
+            labelAutoClose.Text = "Auto Close";
+            // 
+            // labelNetworkBoost
+            // 
+            labelNetworkBoost.AutoSize = true;
+            labelNetworkBoost.Dock = DockStyle.Bottom;
+            labelNetworkBoost.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelNetworkBoost.ForeColor = SystemColors.Control;
+            labelNetworkBoost.Location = new Point(3, 302);
+            labelNetworkBoost.Name = "labelNetworkBoost";
+            labelNetworkBoost.Size = new Size(460, 38);
+            labelNetworkBoost.TabIndex = 23;
+            labelNetworkBoost.Text = "Network Boost";
+            // 
+            // labelGpuOverclock
+            // 
+            labelGpuOverclock.AutoSize = true;
+            labelGpuOverclock.Dock = DockStyle.Bottom;
+            labelGpuOverclock.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelGpuOverclock.ForeColor = SystemColors.Control;
+            labelGpuOverclock.Location = new Point(3, 217);
+            labelGpuOverclock.Name = "labelGpuOverclock";
+            labelGpuOverclock.Size = new Size(460, 38);
+            labelGpuOverclock.TabIndex = 21;
+            labelGpuOverclock.Text = "GPU Overclock";
+            // 
+            // labelLegionEdge
+            // 
+            labelLegionEdge.AutoSize = true;
+            labelLegionEdge.Dock = DockStyle.Bottom;
+            labelLegionEdge.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelLegionEdge.ForeColor = SystemColors.Control;
+            labelLegionEdge.Location = new Point(3, 31);
+            labelLegionEdge.Name = "labelLegionEdge";
+            labelLegionEdge.Size = new Size(460, 54);
+            labelLegionEdge.TabIndex = 17;
+            labelLegionEdge.Text = "LEGION EDGE";
+            // 
+            // labelThermalMode
+            // 
+            labelThermalMode.AutoSize = true;
+            labelThermalMode.Dock = DockStyle.Bottom;
+            labelThermalMode.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelThermalMode.ForeColor = SystemColors.Control;
+            labelThermalMode.Location = new Point(3, 132);
+            labelThermalMode.Name = "labelThermalMode";
+            labelThermalMode.Size = new Size(460, 38);
+            labelThermalMode.TabIndex = 18;
+            labelThermalMode.Text = "Thermal Mode";
+            // 
+            // panelQuickSettingsItems
+            // 
+            panelQuickSettingsItems.BackColor = Color.DarkSlateGray;
+            panelQuickSettingsItems.Controls.Add(layoutQuickSettingsItems);
+            panelQuickSettingsItems.Dock = DockStyle.Fill;
+            panelQuickSettingsItems.Location = new Point(0, 769);
+            panelQuickSettingsItems.Margin = new Padding(0, 10, 0, 0);
+            panelQuickSettingsItems.Name = "panelQuickSettingsItems";
+            panelQuickSettingsItems.Size = new Size(676, 317);
+            panelQuickSettingsItems.TabIndex = 21;
+            // 
+            // layoutQuickSettingsItems
+            // 
+            layoutQuickSettingsItems.ColumnCount = 2;
+            layoutQuickSettingsItems.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 70F));
+            layoutQuickSettingsItems.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30F));
+            layoutQuickSettingsItems.Controls.Add(checkBox11, 1, 2);
+            layoutQuickSettingsItems.Controls.Add(checkBox10, 1, 1);
+            layoutQuickSettingsItems.Controls.Add(checkBox9, 1, 0);
+            layoutQuickSettingsItems.Controls.Add(labelAdaptiveRefreshRate, 0, 2);
+            layoutQuickSettingsItems.Controls.Add(labelWifiSecurity, 0, 1);
+            layoutQuickSettingsItems.Controls.Add(labelRapidCharge, 0, 0);
+            layoutQuickSettingsItems.Dock = DockStyle.Fill;
+            layoutQuickSettingsItems.Location = new Point(0, 0);
+            layoutQuickSettingsItems.Name = "layoutQuickSettingsItems";
+            layoutQuickSettingsItems.RowCount = 3;
+            layoutQuickSettingsItems.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
+            layoutQuickSettingsItems.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
+            layoutQuickSettingsItems.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
+            layoutQuickSettingsItems.Size = new Size(676, 317);
+            layoutQuickSettingsItems.TabIndex = 0;
+            // 
+            // checkBox11
+            // 
+            checkBox11.AutoSize = true;
+            checkBox11.Dock = DockStyle.Bottom;
+            checkBox11.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            checkBox11.ForeColor = SystemColors.Control;
+            checkBox11.Location = new Point(476, 282);
+            checkBox11.Name = "checkBox11";
+            checkBox11.Size = new Size(197, 32);
+            checkBox11.TabIndex = 35;
+            checkBox11.Text = "checkBox";
+            checkBox11.UseVisualStyleBackColor = true;
+            // 
+            // checkBox10
+            // 
+            checkBox10.AutoSize = true;
+            checkBox10.Dock = DockStyle.Bottom;
+            checkBox10.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            checkBox10.ForeColor = SystemColors.Control;
+            checkBox10.Location = new Point(476, 175);
+            checkBox10.Name = "checkBox10";
+            checkBox10.Size = new Size(197, 32);
+            checkBox10.TabIndex = 34;
+            checkBox10.Text = "checkBox";
+            checkBox10.UseVisualStyleBackColor = true;
+            // 
+            // checkBox9
+            // 
+            checkBox9.AutoSize = true;
+            checkBox9.Dock = DockStyle.Bottom;
+            checkBox9.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            checkBox9.ForeColor = SystemColors.Control;
+            checkBox9.Location = new Point(476, 70);
+            checkBox9.Name = "checkBox9";
+            checkBox9.Size = new Size(197, 32);
+            checkBox9.TabIndex = 33;
+            checkBox9.Text = "checkBox";
+            checkBox9.UseVisualStyleBackColor = true;
+            // 
+            // labelAdaptiveRefreshRate
+            // 
+            labelAdaptiveRefreshRate.AutoSize = true;
+            labelAdaptiveRefreshRate.Dock = DockStyle.Bottom;
+            labelAdaptiveRefreshRate.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelAdaptiveRefreshRate.ForeColor = SystemColors.Control;
+            labelAdaptiveRefreshRate.Location = new Point(3, 279);
+            labelAdaptiveRefreshRate.Name = "labelAdaptiveRefreshRate";
+            labelAdaptiveRefreshRate.Size = new Size(467, 38);
+            labelAdaptiveRefreshRate.TabIndex = 23;
+            labelAdaptiveRefreshRate.Text = "AdaptiveRefreshRate";
+            // 
+            // labelWifiSecurity
+            // 
+            labelWifiSecurity.AutoSize = true;
+            labelWifiSecurity.Dock = DockStyle.Bottom;
+            labelWifiSecurity.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelWifiSecurity.ForeColor = SystemColors.Control;
+            labelWifiSecurity.Location = new Point(3, 172);
+            labelWifiSecurity.Name = "labelWifiSecurity";
+            labelWifiSecurity.Size = new Size(467, 38);
+            labelWifiSecurity.TabIndex = 21;
+            labelWifiSecurity.Text = "WiFi Security";
+            // 
+            // labelRapidCharge
+            // 
+            labelRapidCharge.AutoSize = true;
+            labelRapidCharge.Dock = DockStyle.Bottom;
+            labelRapidCharge.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelRapidCharge.ForeColor = SystemColors.Control;
+            labelRapidCharge.Location = new Point(3, 67);
+            labelRapidCharge.Name = "labelRapidCharge";
+            labelRapidCharge.Size = new Size(467, 38);
+            labelRapidCharge.TabIndex = 19;
+            labelRapidCharge.Text = "Rapid Charge";
             // 
             // layoutPanel1
             // 
             layoutPanel1.ColumnCount = 1;
             layoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            layoutPanel1.Controls.Add(layoutSystemHealth, 0, 3);
             layoutPanel1.Controls.Add(labelSystemTools, 0, 1);
             layoutPanel1.Controls.Add(panelCPU, 0, 0);
-            layoutPanel1.Controls.Add(panel1, 0, 2);
+            layoutPanel1.Controls.Add(panelSystemTools, 0, 2);
+            layoutPanel1.Controls.Add(panelSystemHealth, 0, 3);
             layoutPanel1.Dock = DockStyle.Fill;
             layoutPanel1.Location = new Point(0, 0);
             layoutPanel1.Name = "layoutPanel1";
@@ -150,44 +503,18 @@
             layoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
             layoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             layoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            layoutPanel1.Size = new Size(1228, 1061);
+            layoutPanel1.Size = new Size(1243, 1086);
             layoutPanel1.TabIndex = 0;
-            // 
-            // layoutSystemHealth
-            // 
-            layoutSystemHealth.BackColor = Color.DarkSlateGray;
-            layoutSystemHealth.ColumnCount = 1;
-            layoutSystemHealth.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            layoutSystemHealth.Controls.Add(labelSystemHealth, 0, 0);
-            layoutSystemHealth.Dock = DockStyle.Fill;
-            layoutSystemHealth.Location = new Point(3, 798);
-            layoutSystemHealth.Name = "layoutSystemHealth";
-            layoutSystemHealth.RowCount = 1;
-            layoutSystemHealth.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            layoutSystemHealth.Size = new Size(1222, 260);
-            layoutSystemHealth.TabIndex = 18;
-            // 
-            // labelSystemHealth
-            // 
-            labelSystemHealth.AutoSize = true;
-            labelSystemHealth.Dock = DockStyle.Top;
-            labelSystemHealth.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelSystemHealth.ForeColor = SystemColors.Control;
-            labelSystemHealth.Location = new Point(3, 0);
-            labelSystemHealth.Name = "labelSystemHealth";
-            labelSystemHealth.Size = new Size(1216, 48);
-            labelSystemHealth.TabIndex = 1;
-            labelSystemHealth.Text = "System Health";
             // 
             // labelSystemTools
             // 
+            labelSystemTools.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             labelSystemTools.AutoSize = true;
-            labelSystemTools.Dock = DockStyle.Bottom;
             labelSystemTools.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelSystemTools.ForeColor = SystemColors.Control;
-            labelSystemTools.Location = new Point(3, 476);
+            labelSystemTools.Location = new Point(3, 488);
             labelSystemTools.Name = "labelSystemTools";
-            labelSystemTools.Size = new Size(1222, 54);
+            labelSystemTools.Size = new Size(249, 54);
             labelSystemTools.TabIndex = 16;
             labelSystemTools.Text = "System Tools";
             // 
@@ -199,8 +526,8 @@
             panelCPU.Dock = DockStyle.Fill;
             panelCPU.Location = new Point(3, 3);
             panelCPU.Name = "panelCPU";
-            panelCPU.Padding = new Padding(20);
-            panelCPU.Size = new Size(1222, 418);
+            panelCPU.Padding = new Padding(0, 0, 0, 20);
+            panelCPU.Size = new Size(1237, 428);
             panelCPU.TabIndex = 15;
             // 
             // layoutPanelCPU
@@ -217,14 +544,14 @@
             layoutPanelCPU.Controls.Add(button1, 0, 1);
             layoutPanelCPU.Dock = DockStyle.Fill;
             layoutPanelCPU.ForeColor = SystemColors.ControlText;
-            layoutPanelCPU.Location = new Point(20, 20);
+            layoutPanelCPU.Location = new Point(0, 0);
             layoutPanelCPU.Margin = new Padding(0);
             layoutPanelCPU.Name = "layoutPanelCPU";
             layoutPanelCPU.RowCount = 2;
             layoutPanelCPU.RowStyles.Add(new RowStyle(SizeType.Percent, 11.1111107F));
             layoutPanelCPU.RowStyles.Add(new RowStyle(SizeType.Percent, 88.8888855F));
             layoutPanelCPU.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            layoutPanelCPU.Size = new Size(1178, 374);
+            layoutPanelCPU.Size = new Size(1233, 404);
             layoutPanelCPU.TabIndex = 4;
             // 
             // buttonCPU
@@ -232,10 +559,10 @@
             buttonCPU.Dock = DockStyle.Bottom;
             buttonCPU.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
             buttonCPU.ForeColor = SystemColors.ControlText;
-            buttonCPU.Location = new Point(207, 131);
+            buttonCPU.Location = new Point(213, 217);
             buttonCPU.Margin = new Padding(90, 90, 90, 0);
             buttonCPU.Name = "buttonCPU";
-            buttonCPU.Size = new Size(409, 243);
+            buttonCPU.Size = new Size(436, 187);
             buttonCPU.TabIndex = 3;
             buttonCPU.Text = "CPU";
             buttonCPU.UseVisualStyleBackColor = true;
@@ -243,10 +570,10 @@
             // button3
             // 
             button3.Dock = DockStyle.Left;
-            button3.Location = new Point(706, 41);
+            button3.Location = new Point(739, 44);
             button3.Margin = new Padding(0, 0, 80, 0);
             button3.Name = "button3";
-            button3.Size = new Size(33, 333);
+            button3.Size = new Size(43, 360);
             button3.TabIndex = 3;
             button3.UseVisualStyleBackColor = true;
             // 
@@ -256,9 +583,9 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button2.ForeColor = SystemColors.Control;
-            button2.Location = new Point(1063, 3);
+            button2.Location = new Point(1118, 3);
             button2.Name = "button2";
-            button2.Size = new Size(112, 35);
+            button2.Size = new Size(112, 38);
             button2.TabIndex = 1;
             button2.Text = "INFO";
             button2.UseVisualStyleBackColor = true;
@@ -266,23 +593,23 @@
             // button1
             // 
             button1.Dock = DockStyle.Right;
-            button1.Location = new Point(84, 41);
+            button1.Location = new Point(80, 44);
             button1.Margin = new Padding(80, 0, 0, 0);
             button1.Name = "button1";
-            button1.Size = new Size(33, 333);
+            button1.Size = new Size(43, 360);
             button1.TabIndex = 2;
             button1.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // panelSystemTools
             // 
-            panel1.Controls.Add(layoutSystemTools);
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 530);
-            panel1.Margin = new Padding(0);
-            panel1.Name = "panel1";
-            panel1.Padding = new Padding(0, 0, 0, 20);
-            panel1.Size = new Size(1228, 265);
-            panel1.TabIndex = 17;
+            panelSystemTools.Controls.Add(layoutSystemTools);
+            panelSystemTools.Dock = DockStyle.Fill;
+            panelSystemTools.Location = new Point(0, 542);
+            panelSystemTools.Margin = new Padding(0);
+            panelSystemTools.Name = "panelSystemTools";
+            panelSystemTools.Padding = new Padding(0, 0, 0, 20);
+            panelSystemTools.Size = new Size(1243, 271);
+            panelSystemTools.TabIndex = 17;
             // 
             // layoutSystemTools
             // 
@@ -306,7 +633,7 @@
             layoutSystemTools.RowCount = 1;
             layoutSystemTools.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             layoutSystemTools.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            layoutSystemTools.Size = new Size(1228, 245);
+            layoutSystemTools.Size = new Size(1243, 251);
             layoutSystemTools.TabIndex = 1;
             // 
             // buttonSystemUpdate
@@ -317,7 +644,7 @@
             buttonSystemUpdate.Location = new Point(50, 50);
             buttonSystemUpdate.Margin = new Padding(20);
             buttonSystemUpdate.Name = "buttonSystemUpdate";
-            buttonSystemUpdate.Size = new Size(193, 145);
+            buttonSystemUpdate.Size = new Size(196, 151);
             buttonSystemUpdate.TabIndex = 9;
             buttonSystemUpdate.Text = "System Update";
             buttonSystemUpdate.UseVisualStyleBackColor = true;
@@ -327,10 +654,10 @@
             buttonMacroKey.Dock = DockStyle.Fill;
             buttonMacroKey.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             buttonMacroKey.ForeColor = SystemColors.ControlText;
-            buttonMacroKey.Location = new Point(283, 50);
+            buttonMacroKey.Location = new Point(286, 50);
             buttonMacroKey.Margin = new Padding(20);
             buttonMacroKey.Name = "buttonMacroKey";
-            buttonMacroKey.Size = new Size(193, 145);
+            buttonMacroKey.Size = new Size(196, 151);
             buttonMacroKey.TabIndex = 10;
             buttonMacroKey.Text = "Macro Key";
             buttonMacroKey.UseVisualStyleBackColor = true;
@@ -340,10 +667,10 @@
             buttonPower.Dock = DockStyle.Fill;
             buttonPower.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             buttonPower.ForeColor = SystemColors.ControlText;
-            buttonPower.Location = new Point(516, 50);
+            buttonPower.Location = new Point(522, 50);
             buttonPower.Margin = new Padding(20);
             buttonPower.Name = "buttonPower";
-            buttonPower.Size = new Size(193, 145);
+            buttonPower.Size = new Size(196, 151);
             buttonPower.TabIndex = 11;
             buttonPower.Text = "Power";
             buttonPower.UseVisualStyleBackColor = true;
@@ -353,10 +680,10 @@
             buttonMedia.Dock = DockStyle.Fill;
             buttonMedia.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             buttonMedia.ForeColor = SystemColors.ControlText;
-            buttonMedia.Location = new Point(749, 50);
+            buttonMedia.Location = new Point(758, 50);
             buttonMedia.Margin = new Padding(20);
             buttonMedia.Name = "buttonMedia";
-            buttonMedia.Size = new Size(193, 145);
+            buttonMedia.Size = new Size(196, 151);
             buttonMedia.TabIndex = 13;
             buttonMedia.Text = "Media";
             buttonMedia.UseVisualStyleBackColor = true;
@@ -366,397 +693,70 @@
             buttonHardwareScan.Dock = DockStyle.Fill;
             buttonHardwareScan.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             buttonHardwareScan.ForeColor = SystemColors.ControlText;
-            buttonHardwareScan.Location = new Point(982, 50);
+            buttonHardwareScan.Location = new Point(994, 50);
             buttonHardwareScan.Margin = new Padding(20);
             buttonHardwareScan.Name = "buttonHardwareScan";
-            buttonHardwareScan.Size = new Size(196, 145);
+            buttonHardwareScan.Size = new Size(199, 151);
             buttonHardwareScan.TabIndex = 14;
             buttonHardwareScan.Text = "Hardware Scan";
             buttonHardwareScan.UseVisualStyleBackColor = true;
             // 
-            // layoutPanel2
+            // panelSystemHealth
             // 
-            layoutPanel2.ColumnCount = 1;
-            layoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            layoutPanel2.Controls.Add(labelQuickSettings, 0, 1);
-            layoutPanel2.Controls.Add(panelLegionEdge, 0, 0);
-            layoutPanel2.Controls.Add(panelQuickSettingsItems, 0, 2);
-            layoutPanel2.Dock = DockStyle.Fill;
-            layoutPanel2.Location = new Point(0, 0);
-            layoutPanel2.Name = "layoutPanel2";
-            layoutPanel2.RowCount = 3;
-            layoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 63.61923F));
-            layoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 6.3147974F));
-            layoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 30F));
-            layoutPanel2.Size = new Size(666, 1061);
-            layoutPanel2.TabIndex = 0;
+            panelSystemHealth.BackColor = Color.DarkSlateGray;
+            panelSystemHealth.Controls.Add(tableLayoutPanel1);
+            panelSystemHealth.Dock = DockStyle.Fill;
+            panelSystemHealth.Location = new Point(0, 813);
+            panelSystemHealth.Margin = new Padding(0);
+            panelSystemHealth.Name = "panelSystemHealth";
+            panelSystemHealth.Padding = new Padding(20);
+            panelSystemHealth.Size = new Size(1243, 273);
+            panelSystemHealth.TabIndex = 18;
             // 
-            // labelQuickSettings
+            // tableLayoutPanel1
             // 
-            labelQuickSettings.AutoSize = true;
-            labelQuickSettings.Dock = DockStyle.Bottom;
-            labelQuickSettings.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelQuickSettings.ForeColor = SystemColors.Control;
-            labelQuickSettings.Location = new Point(3, 688);
-            labelQuickSettings.Name = "labelQuickSettings";
-            labelQuickSettings.Size = new Size(660, 54);
-            labelQuickSettings.TabIndex = 22;
-            labelQuickSettings.Text = "Quick Settings";
+            tableLayoutPanel1.ColumnCount = 1;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel1.Controls.Add(label1, 0, 0);
+            tableLayoutPanel1.Dock = DockStyle.Fill;
+            tableLayoutPanel1.Location = new Point(20, 20);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 1;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel1.Size = new Size(1203, 233);
+            tableLayoutPanel1.TabIndex = 0;
             // 
-            // panelLegionEdge
+            // label1
             // 
-            panelLegionEdge.BackColor = SystemColors.ControlDarkDark;
-            panelLegionEdge.BorderStyle = BorderStyle.Fixed3D;
-            panelLegionEdge.Controls.Add(layoutLegionEdge);
-            panelLegionEdge.Dock = DockStyle.Fill;
-            panelLegionEdge.Location = new Point(3, 3);
-            panelLegionEdge.Name = "panelLegionEdge";
-            panelLegionEdge.Size = new Size(660, 669);
-            panelLegionEdge.TabIndex = 0;
+            label1.AutoSize = true;
+            label1.Dock = DockStyle.Top;
+            label1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.Control;
+            label1.Location = new Point(3, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(1197, 54);
+            label1.TabIndex = 17;
+            label1.Text = "System Health";
             // 
-            // layoutLegionEdge
+            // splitContainer1
             // 
-            layoutLegionEdge.BackColor = Color.DarkSlateGray;
-            layoutLegionEdge.ColumnCount = 2;
-            layoutLegionEdge.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 80F));
-            layoutLegionEdge.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            layoutLegionEdge.Controls.Add(checkBox8, 1, 7);
-            layoutLegionEdge.Controls.Add(checkBox7, 1, 6);
-            layoutLegionEdge.Controls.Add(checkBox6, 1, 5);
-            layoutLegionEdge.Controls.Add(checkBox5, 1, 4);
-            layoutLegionEdge.Controls.Add(checkBox4, 1, 3);
-            layoutLegionEdge.Controls.Add(checkBox3, 1, 2);
-            layoutLegionEdge.Controls.Add(checkBox2, 1, 1);
-            layoutLegionEdge.Controls.Add(labelTouchpadLock, 0, 7);
-            layoutLegionEdge.Controls.Add(labelOverDrive, 0, 6);
-            layoutLegionEdge.Controls.Add(labelGpuWorkingMode, 0, 5);
-            layoutLegionEdge.Controls.Add(labelAutoClose, 0, 4);
-            layoutLegionEdge.Controls.Add(labelNetworkBoost, 0, 3);
-            layoutLegionEdge.Controls.Add(labelGpuOverclock, 0, 2);
-            layoutLegionEdge.Controls.Add(labelLegionEdge, 0, 0);
-            layoutLegionEdge.Controls.Add(labelThermalMode, 0, 1);
-            layoutLegionEdge.Controls.Add(checkBox1, 1, 0);
-            layoutLegionEdge.Dock = DockStyle.Fill;
-            layoutLegionEdge.Location = new Point(0, 0);
-            layoutLegionEdge.Name = "layoutLegionEdge";
-            layoutLegionEdge.RowCount = 8;
-            layoutLegionEdge.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
-            layoutLegionEdge.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
-            layoutLegionEdge.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
-            layoutLegionEdge.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
-            layoutLegionEdge.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
-            layoutLegionEdge.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
-            layoutLegionEdge.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
-            layoutLegionEdge.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
-            layoutLegionEdge.Size = new Size(656, 665);
-            layoutLegionEdge.TabIndex = 0;
+            splitContainer1.Dock = DockStyle.Fill;
+            splitContainer1.Location = new Point(0, 139);
+            splitContainer1.Name = "splitContainer1";
             // 
-            // checkBox8
+            // splitContainer1.Panel1
             // 
-            checkBox8.AutoSize = true;
-            checkBox8.Dock = DockStyle.Bottom;
-            checkBox8.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            checkBox8.ForeColor = SystemColors.Control;
-            checkBox8.Location = new Point(527, 630);
-            checkBox8.Name = "checkBox8";
-            checkBox8.Size = new Size(126, 32);
-            checkBox8.TabIndex = 39;
-            checkBox8.Text = "checkBox";
-            checkBox8.UseVisualStyleBackColor = true;
+            splitContainer1.Panel1.Controls.Add(layoutPanel1);
             // 
-            // checkBox7
+            // splitContainer1.Panel2
             // 
-            checkBox7.AutoSize = true;
-            checkBox7.Dock = DockStyle.Bottom;
-            checkBox7.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            checkBox7.ForeColor = SystemColors.Control;
-            checkBox7.Location = new Point(527, 546);
-            checkBox7.Name = "checkBox7";
-            checkBox7.Size = new Size(126, 32);
-            checkBox7.TabIndex = 38;
-            checkBox7.Text = "checkBox";
-            checkBox7.UseVisualStyleBackColor = true;
-            // 
-            // checkBox6
-            // 
-            checkBox6.AutoSize = true;
-            checkBox6.Dock = DockStyle.Bottom;
-            checkBox6.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            checkBox6.ForeColor = SystemColors.Control;
-            checkBox6.Location = new Point(527, 463);
-            checkBox6.Name = "checkBox6";
-            checkBox6.Size = new Size(126, 32);
-            checkBox6.TabIndex = 37;
-            checkBox6.Text = "checkBox";
-            checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            checkBox5.AutoSize = true;
-            checkBox5.Dock = DockStyle.Bottom;
-            checkBox5.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            checkBox5.ForeColor = SystemColors.Control;
-            checkBox5.Location = new Point(527, 380);
-            checkBox5.Name = "checkBox5";
-            checkBox5.Size = new Size(126, 32);
-            checkBox5.TabIndex = 36;
-            checkBox5.Text = "checkBox";
-            checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            checkBox4.AutoSize = true;
-            checkBox4.Dock = DockStyle.Bottom;
-            checkBox4.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            checkBox4.ForeColor = SystemColors.Control;
-            checkBox4.Location = new Point(527, 297);
-            checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(126, 32);
-            checkBox4.TabIndex = 35;
-            checkBox4.Text = "checkBox";
-            checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            checkBox3.AutoSize = true;
-            checkBox3.Dock = DockStyle.Bottom;
-            checkBox3.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            checkBox3.ForeColor = SystemColors.Control;
-            checkBox3.Location = new Point(527, 214);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(126, 32);
-            checkBox3.TabIndex = 34;
-            checkBox3.Text = "checkBox";
-            checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            checkBox2.AutoSize = true;
-            checkBox2.Dock = DockStyle.Bottom;
-            checkBox2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            checkBox2.ForeColor = SystemColors.Control;
-            checkBox2.Location = new Point(527, 131);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(126, 32);
-            checkBox2.TabIndex = 33;
-            checkBox2.Text = "checkBox";
-            checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // labelTouchpadLock
-            // 
-            labelTouchpadLock.AutoSize = true;
-            labelTouchpadLock.Dock = DockStyle.Bottom;
-            labelTouchpadLock.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelTouchpadLock.ForeColor = SystemColors.Control;
-            labelTouchpadLock.Location = new Point(3, 627);
-            labelTouchpadLock.Name = "labelTouchpadLock";
-            labelTouchpadLock.Size = new Size(518, 38);
-            labelTouchpadLock.TabIndex = 31;
-            labelTouchpadLock.Text = "Touchpad Lock";
-            // 
-            // labelOverDrive
-            // 
-            labelOverDrive.AutoSize = true;
-            labelOverDrive.Dock = DockStyle.Bottom;
-            labelOverDrive.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelOverDrive.ForeColor = SystemColors.Control;
-            labelOverDrive.Location = new Point(3, 543);
-            labelOverDrive.Name = "labelOverDrive";
-            labelOverDrive.Size = new Size(518, 38);
-            labelOverDrive.TabIndex = 29;
-            labelOverDrive.Text = "Over Drive";
-            // 
-            // labelGpuWorkingMode
-            // 
-            labelGpuWorkingMode.AutoSize = true;
-            labelGpuWorkingMode.Dock = DockStyle.Bottom;
-            labelGpuWorkingMode.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelGpuWorkingMode.ForeColor = SystemColors.Control;
-            labelGpuWorkingMode.Location = new Point(3, 460);
-            labelGpuWorkingMode.Name = "labelGpuWorkingMode";
-            labelGpuWorkingMode.Size = new Size(518, 38);
-            labelGpuWorkingMode.TabIndex = 27;
-            labelGpuWorkingMode.Text = "GPU Working Mode";
-            // 
-            // labelAutoClose
-            // 
-            labelAutoClose.AutoSize = true;
-            labelAutoClose.Dock = DockStyle.Bottom;
-            labelAutoClose.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelAutoClose.ForeColor = SystemColors.Control;
-            labelAutoClose.Location = new Point(3, 377);
-            labelAutoClose.Name = "labelAutoClose";
-            labelAutoClose.Size = new Size(518, 38);
-            labelAutoClose.TabIndex = 25;
-            labelAutoClose.Text = "Auto Close";
-            // 
-            // labelNetworkBoost
-            // 
-            labelNetworkBoost.AutoSize = true;
-            labelNetworkBoost.Dock = DockStyle.Bottom;
-            labelNetworkBoost.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelNetworkBoost.ForeColor = SystemColors.Control;
-            labelNetworkBoost.Location = new Point(3, 294);
-            labelNetworkBoost.Name = "labelNetworkBoost";
-            labelNetworkBoost.Size = new Size(518, 38);
-            labelNetworkBoost.TabIndex = 23;
-            labelNetworkBoost.Text = "Network Boost";
-            // 
-            // labelGpuOverclock
-            // 
-            labelGpuOverclock.AutoSize = true;
-            labelGpuOverclock.Dock = DockStyle.Bottom;
-            labelGpuOverclock.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelGpuOverclock.ForeColor = SystemColors.Control;
-            labelGpuOverclock.Location = new Point(3, 211);
-            labelGpuOverclock.Name = "labelGpuOverclock";
-            labelGpuOverclock.Size = new Size(518, 38);
-            labelGpuOverclock.TabIndex = 21;
-            labelGpuOverclock.Text = "GPU Overclock";
-            // 
-            // labelLegionEdge
-            // 
-            labelLegionEdge.AutoSize = true;
-            labelLegionEdge.Dock = DockStyle.Bottom;
-            labelLegionEdge.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelLegionEdge.ForeColor = SystemColors.Control;
-            labelLegionEdge.Location = new Point(3, 29);
-            labelLegionEdge.Name = "labelLegionEdge";
-            labelLegionEdge.Size = new Size(518, 54);
-            labelLegionEdge.TabIndex = 17;
-            labelLegionEdge.Text = "LEGION EDGE";
-            // 
-            // labelThermalMode
-            // 
-            labelThermalMode.AutoSize = true;
-            labelThermalMode.Dock = DockStyle.Bottom;
-            labelThermalMode.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelThermalMode.ForeColor = SystemColors.Control;
-            labelThermalMode.Location = new Point(3, 128);
-            labelThermalMode.Name = "labelThermalMode";
-            labelThermalMode.Size = new Size(518, 38);
-            labelThermalMode.TabIndex = 18;
-            labelThermalMode.Text = "Thermal Mode";
-            // 
-            // checkBox1
-            // 
-            checkBox1.AutoSize = true;
-            checkBox1.Dock = DockStyle.Bottom;
-            checkBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            checkBox1.ForeColor = SystemColors.Control;
-            checkBox1.Location = new Point(527, 48);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(126, 32);
-            checkBox1.TabIndex = 32;
-            checkBox1.Text = "checkBox";
-            checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // panelQuickSettingsItems
-            // 
-            panelQuickSettingsItems.BackColor = Color.DarkSlateGray;
-            panelQuickSettingsItems.Controls.Add(layoutQuickSettingsItems);
-            panelQuickSettingsItems.Dock = DockStyle.Fill;
-            panelQuickSettingsItems.Location = new Point(0, 752);
-            panelQuickSettingsItems.Margin = new Padding(0, 10, 0, 0);
-            panelQuickSettingsItems.Name = "panelQuickSettingsItems";
-            panelQuickSettingsItems.Size = new Size(666, 309);
-            panelQuickSettingsItems.TabIndex = 21;
-            // 
-            // layoutQuickSettingsItems
-            // 
-            layoutQuickSettingsItems.ColumnCount = 2;
-            layoutQuickSettingsItems.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 80F));
-            layoutQuickSettingsItems.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            layoutQuickSettingsItems.Controls.Add(checkBox11, 1, 2);
-            layoutQuickSettingsItems.Controls.Add(checkBox10, 1, 1);
-            layoutQuickSettingsItems.Controls.Add(checkBox9, 1, 0);
-            layoutQuickSettingsItems.Controls.Add(labelAdaptiveRefreshRate, 0, 2);
-            layoutQuickSettingsItems.Controls.Add(labelWifiSecurity, 0, 1);
-            layoutQuickSettingsItems.Controls.Add(labelRapidCharge, 0, 0);
-            layoutQuickSettingsItems.Dock = DockStyle.Fill;
-            layoutQuickSettingsItems.Location = new Point(0, 0);
-            layoutQuickSettingsItems.Name = "layoutQuickSettingsItems";
-            layoutQuickSettingsItems.RowCount = 3;
-            layoutQuickSettingsItems.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333359F));
-            layoutQuickSettingsItems.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333359F));
-            layoutQuickSettingsItems.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333359F));
-            layoutQuickSettingsItems.Size = new Size(666, 309);
-            layoutQuickSettingsItems.TabIndex = 0;
-            // 
-            // checkBox11
-            // 
-            checkBox11.AutoSize = true;
-            checkBox11.Dock = DockStyle.Bottom;
-            checkBox11.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            checkBox11.ForeColor = SystemColors.Control;
-            checkBox11.Location = new Point(535, 274);
-            checkBox11.Name = "checkBox11";
-            checkBox11.Size = new Size(128, 32);
-            checkBox11.TabIndex = 35;
-            checkBox11.Text = "checkBox";
-            checkBox11.UseVisualStyleBackColor = true;
-            // 
-            // checkBox10
-            // 
-            checkBox10.AutoSize = true;
-            checkBox10.Dock = DockStyle.Bottom;
-            checkBox10.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            checkBox10.ForeColor = SystemColors.Control;
-            checkBox10.Location = new Point(535, 171);
-            checkBox10.Name = "checkBox10";
-            checkBox10.Size = new Size(128, 32);
-            checkBox10.TabIndex = 34;
-            checkBox10.Text = "checkBox";
-            checkBox10.UseVisualStyleBackColor = true;
-            // 
-            // checkBox9
-            // 
-            checkBox9.AutoSize = true;
-            checkBox9.Dock = DockStyle.Bottom;
-            checkBox9.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            checkBox9.ForeColor = SystemColors.Control;
-            checkBox9.Location = new Point(535, 68);
-            checkBox9.Name = "checkBox9";
-            checkBox9.Size = new Size(128, 32);
-            checkBox9.TabIndex = 33;
-            checkBox9.Text = "checkBox";
-            checkBox9.UseVisualStyleBackColor = true;
-            // 
-            // labelAdaptiveRefreshRate
-            // 
-            labelAdaptiveRefreshRate.AutoSize = true;
-            labelAdaptiveRefreshRate.Dock = DockStyle.Bottom;
-            labelAdaptiveRefreshRate.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelAdaptiveRefreshRate.ForeColor = SystemColors.Control;
-            labelAdaptiveRefreshRate.Location = new Point(3, 271);
-            labelAdaptiveRefreshRate.Name = "labelAdaptiveRefreshRate";
-            labelAdaptiveRefreshRate.Size = new Size(526, 38);
-            labelAdaptiveRefreshRate.TabIndex = 23;
-            labelAdaptiveRefreshRate.Text = "AdaptiveRefreshRate";
-            // 
-            // labelWifiSecurity
-            // 
-            labelWifiSecurity.AutoSize = true;
-            labelWifiSecurity.Dock = DockStyle.Bottom;
-            labelWifiSecurity.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelWifiSecurity.ForeColor = SystemColors.Control;
-            labelWifiSecurity.Location = new Point(3, 168);
-            labelWifiSecurity.Name = "labelWifiSecurity";
-            labelWifiSecurity.Size = new Size(526, 38);
-            labelWifiSecurity.TabIndex = 21;
-            labelWifiSecurity.Text = "WiFi Security";
-            // 
-            // labelRapidCharge
-            // 
-            labelRapidCharge.AutoSize = true;
-            labelRapidCharge.Dock = DockStyle.Bottom;
-            labelRapidCharge.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelRapidCharge.ForeColor = SystemColors.Control;
-            labelRapidCharge.Location = new Point(3, 65);
-            labelRapidCharge.Name = "labelRapidCharge";
-            labelRapidCharge.Size = new Size(526, 38);
-            labelRapidCharge.TabIndex = 19;
-            labelRapidCharge.Text = "Rapid Charge";
+            splitContainer1.Panel2.Controls.Add(layoutPanel2);
+            splitContainer1.Size = new Size(1929, 1086);
+            splitContainer1.SplitterDistance = 1243;
+            splitContainer1.SplitterWidth = 10;
+            splitContainer1.TabIndex = 2;
             // 
             // DevicePage
             // 
@@ -767,21 +767,9 @@
             Controls.Add(splitContainer1);
             Controls.Add(panelLegion);
             Name = "DevicePage";
-            Size = new Size(1904, 1200);
+            Size = new Size(1929, 1225);
             panelLegion.ResumeLayout(false);
             panelLegion.PerformLayout();
-            splitContainer1.Panel1.ResumeLayout(false);
-            splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
-            splitContainer1.ResumeLayout(false);
-            layoutPanel1.ResumeLayout(false);
-            layoutPanel1.PerformLayout();
-            layoutSystemHealth.ResumeLayout(false);
-            layoutSystemHealth.PerformLayout();
-            panelCPU.ResumeLayout(false);
-            layoutPanelCPU.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            layoutSystemTools.ResumeLayout(false);
             layoutPanel2.ResumeLayout(false);
             layoutPanel2.PerformLayout();
             panelLegionEdge.ResumeLayout(false);
@@ -790,6 +778,19 @@
             panelQuickSettingsItems.ResumeLayout(false);
             layoutQuickSettingsItems.ResumeLayout(false);
             layoutQuickSettingsItems.PerformLayout();
+            layoutPanel1.ResumeLayout(false);
+            layoutPanel1.PerformLayout();
+            panelCPU.ResumeLayout(false);
+            layoutPanelCPU.ResumeLayout(false);
+            panelSystemTools.ResumeLayout(false);
+            layoutSystemTools.ResumeLayout(false);
+            panelSystemHealth.ResumeLayout(false);
+            tableLayoutPanel1.ResumeLayout(false);
+            tableLayoutPanel1.PerformLayout();
+            splitContainer1.Panel1.ResumeLayout(false);
+            splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
+            splitContainer1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -797,25 +798,8 @@
 
         private Panel panelLegion;
         private Label label4;
-        private SplitContainer splitContainer1;
-        private TableLayoutPanel layoutPanel1;
-        private Panel panelCPU;
-        private TableLayoutPanel layoutPanelCPU;
-        private Button buttonCPU;
-        private Button button3;
-        private Button button2;
-        private Button button1;
-        private Label labelSystemTools;
-        private Panel panel1;
-        private TableLayoutPanel layoutSystemTools;
-        private Button buttonSystemUpdate;
-        private Button buttonMacroKey;
-        private Button buttonPower;
-        private Button buttonMedia;
-        private Button buttonHardwareScan;
-        private TableLayoutPanel layoutSystemHealth;
-        private Label labelSystemHealth;
         private TableLayoutPanel layoutPanel2;
+        private Label labelQuickSettings;
         private Panel panelLegionEdge;
         private TableLayoutPanel layoutLegionEdge;
         private CheckBox checkBox8;
@@ -833,15 +817,32 @@
         private Label labelGpuOverclock;
         private Label labelLegionEdge;
         private Label labelThermalMode;
-        private CheckBox checkBox1;
         private Panel panelQuickSettingsItems;
         private TableLayoutPanel layoutQuickSettingsItems;
-        private Label labelAdaptiveRefreshRate;
-        private Label labelWifiSecurity;
-        private Label labelRapidCharge;
         private CheckBox checkBox11;
         private CheckBox checkBox10;
         private CheckBox checkBox9;
-        private Label labelQuickSettings;
+        private Label labelAdaptiveRefreshRate;
+        private Label labelWifiSecurity;
+        private Label labelRapidCharge;
+        private TableLayoutPanel layoutPanel1;
+        private Label labelSystemTools;
+        private Panel panelCPU;
+        private TableLayoutPanel layoutPanelCPU;
+        private Button buttonCPU;
+        private Button button3;
+        private Button button2;
+        private Button button1;
+        private Panel panelSystemTools;
+        private TableLayoutPanel layoutSystemTools;
+        private Button buttonSystemUpdate;
+        private Button buttonMacroKey;
+        private Button buttonPower;
+        private Button buttonMedia;
+        private Button buttonHardwareScan;
+        private Panel panelSystemHealth;
+        private TableLayoutPanel tableLayoutPanel1;
+        private Label label1;
+        private SplitContainer splitContainer1;
     }
 }
