@@ -39,12 +39,10 @@
             panelL = new Panel();
             button1 = new Button();
             panelMain = new Panel();
-            panel1 = new Panel();
             devicePage1 = new DevicePage();
             layoutPanelLegionSlim.SuspendLayout();
             panelL.SuspendLayout();
             panelMain.SuspendLayout();
-            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // layoutPanelLegionSlim
@@ -134,6 +132,7 @@
             labelLegionSlim.Size = new Size(984, 38);
             labelLegionSlim.TabIndex = 0;
             labelLegionSlim.Text = "Legion Slim 5 16APH8";
+            labelLegionSlim.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panelL
             // 
@@ -160,31 +159,23 @@
             // 
             // panelMain
             // 
-            panelMain.BackColor = Color.DarkSlateGray;
-            panelMain.Controls.Add(panel1);
+            panelMain.AutoScroll = true;
+            panelMain.BackColor = SystemColors.ControlDarkDark;
+            panelMain.Controls.Add(devicePage1);
             panelMain.Dock = DockStyle.Fill;
             panelMain.Location = new Point(0, 72);
             panelMain.Name = "panelMain";
             panelMain.Size = new Size(1801, 1010);
             panelMain.TabIndex = 2;
             // 
-            // panel1
-            // 
-            panel1.AutoScroll = true;
-            panel1.Controls.Add(devicePage1);
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1801, 1010);
-            panel1.TabIndex = 0;
-            // 
             // devicePage1
             // 
             devicePage1.AutoScroll = true;
             devicePage1.BackColor = SystemColors.ControlDarkDark;
+            devicePage1.Dock = DockStyle.Top;
             devicePage1.Location = new Point(0, 0);
             devicePage1.Name = "devicePage1";
-            devicePage1.Size = new Size(1775, 1200);
+            devicePage1.Size = new Size(1775, 1701);
             devicePage1.TabIndex = 0;
             // 
             // Form1
@@ -202,7 +193,6 @@
             layoutPanelLegionSlim.PerformLayout();
             panelL.ResumeLayout(false);
             panelMain.ResumeLayout(false);
-            panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -217,7 +207,6 @@
         private Panel panelL;
         private Button button1;
         private Panel panelMain;
-        private Panel panel1;
         private DevicePage devicePage1;
     }
 }
